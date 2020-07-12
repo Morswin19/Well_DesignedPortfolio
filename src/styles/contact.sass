@@ -1,0 +1,73 @@
+@import "./sass-variables.sass"
+
+#contact
+    display: flex
+    margin: 0
+    .contactItem
+        padding: 2rem
+    #getInTouch
+        background: $cmain
+        width: 50%
+        display: flex
+        justify-content: flex-end
+        #getInTouchContainer
+            display: flex
+            flex-direction: column
+            width: 60%
+            text-align: left
+            .address
+                padding: 2rem 0
+                margin: auto 0 auto auto
+                text-align: center
+                display: flex
+                text-align: left
+                // justify-content: space-between
+                // max-width: 70%
+                // border: 5px solid green
+                h4
+                    width: 200px
+                    padding: 0
+                    margin: 0
+                h5
+                    max-width: 300px
+                    padding: 0
+                    margin: 0
+    #contactMe
+        background: $cfour
+        width: 50%
+        // display: flex
+        // flex-direction: column
+        #contactMeContainer
+            width: 60%
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            text-align: left
+            form
+                input
+                    margin: 1rem
+                    padding: 1.5rem
+                    width: 80%
+                    border-radius: 10px
+                    border: 0px solid
+                textarea
+                    margin: 1rem
+                    padding: 1.5rem
+                    width: 80%
+                    border-radius: 10px
+                    border: 0px solid
+                button
+                    // background-image: linear-gradient($cfour, $cfour)
+                    background: $cfour
+                    border: 2px solid white
+                    color: white
+                    transition: 0.3s
+                    width: 90%
+                    margin: 1rem
+                    padding: 0 1.5rem
+                    // height: 20px
+
+                    &:hover
+                        background: white
+                        border: 2px solid white
+                        color: $cfour

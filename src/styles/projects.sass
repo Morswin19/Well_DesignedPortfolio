@@ -1,0 +1,123 @@
+@import "./sass-variables.sass"
+
+#projects
+    min-height: $hmain
+    margin: 2rem auto
+    width: 100%
+
+    #imgContainer
+        margin: auto
+        display: grid
+        grid-template-columns: repeat(6, 1fr)
+        grid-template-rows: auto
+        grid-gap: 1rem
+        width: 60%
+
+        .img1
+            grid-column: span 2
+            grid-row: span 2
+
+        .img2
+            grid-column: span 2
+
+        .img3
+            grid-column: span 2
+            grid-row: span 2
+
+        .img4
+            grid-column: span 2
+            grid-row: span 2
+
+        .img5
+            grid-column: span 2
+
+        .img6
+            grid-column: span 2
+
+        .img7
+            grid-column: span 4
+            grid-row: span 2
+
+        .img8
+            grid-column: span 2
+            grid-row: span 2
+
+@media (max-width: 1000px)
+    #projects
+        #imgContainer
+            grid-template-columns: repeat(4, 1fr)
+
+            width: 80%
+
+            .imageDiv
+                img
+
+            .img1
+                grid-column: span 2
+                grid-row: span 2
+
+            .img2
+                grid-column: span 2
+
+            .img3
+                grid-column: span 2
+                grid-row: span 2
+
+            .img4
+                grid-column: span 2
+                grid-row: span 2
+
+            .img5
+                grid-column: span 2
+
+            .img6
+                grid-column: span 4
+                grid-row: span 2
+
+            .img7
+                grid-column: span 2
+                grid-row: span 2
+
+            .img8
+                grid-column: span 2
+                grid-row: span 2
+
+@media (max-width: 600px)
+    #projects
+        #imgContainer
+            grid-template-columns: repeat(2, 1fr)
+
+            width: 80%
+
+            .imageDiv
+                img
+
+            .img1
+                grid-column: span 2
+                grid-row: span 2
+
+            .img2
+                grid-column: span 2
+
+            .img3
+                grid-column: span 2
+                grid-row: span 2
+
+            .img4
+                grid-column: span 2
+                grid-row: span 2
+
+            .img5
+                grid-column: span 2
+
+            .img6
+                grid-column: span 2
+                grid-row: span 2
+
+            .img7
+                grid-column: span 2
+                grid-row: span 2
+
+            .img8
+                grid-column: span 2
+                grid-row: span 2

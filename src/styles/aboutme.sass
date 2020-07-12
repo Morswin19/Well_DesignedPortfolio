@@ -1,0 +1,54 @@
+@import "./sass-variables.sass"
+
+#aboutMe
+    background-color: $csecond
+    width: 100%
+    margin-bottom: 5rem
+    #amInfo
+        h1
+            color: azure
+            margin-bottom: 1rem
+        p
+            color: #cccccc
+    #amPhotos
+        #imgAmContainer
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            // grid-template-rows: 50vh 50vh
+            width: 100%
+            #imgAm1
+                grid-column: span 2
+                grid-row: span 2
+            #imgAm2
+                grid-column: span 1
+                grid-row: span 1
+            #imgAm3
+                grid-column: span 1
+                grid-row: span 1
+            #imgAm4
+                grid-column: span 1
+                grid-row: span 1
+            #imgAm5
+                grid-column: span 1
+                grid-row: span 1
+
+@media (max-width: 800px)
+    #aboutMe
+        #amPhotos
+            #imgAmContainer
+                grid-template-columns: repeat(2, 1fr)
+                #imgAm1
+                    grid-column: span 2
+                    grid-row: span 2
+                #imgAm2
+                    grid-column: span 2
+                    grid-row: span 2
+                #imgAm3
+                    grid-column: span 2
+                    grid-row: span 2
+                #imgAm4
+                    grid-column: span 2
+                    grid-row: span 2
+                #imgAm5
+                    grid-column: span 2
+                    grid-row: span 2

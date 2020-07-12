@@ -1,0 +1,33 @@
+@import "./sass-variables.sass"
+
+#skills
+    width: 90%
+    max-width: 1200px
+    margin: 0 auto
+    display: flex
+    #imgSkillsContainer
+        display: flex
+        flex-wrap: wrap
+
+        .imageDiv
+            width: 33%
+            max-height: 300px
+            max-width: 250px
+            margin: 1rem
+            // width: auto
+
+@media (max-width: 1050px)
+    #skills
+        width: 90%
+        max-width: 1200px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        #imgSkillsContainer
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            .imageDiv
+                // width: 100%
+                margin: 1rem
+                // width: auto
