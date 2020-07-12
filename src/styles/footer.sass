@@ -4,5 +4,54 @@
     min-height: 50vh
     background: $csecond
     color: $clight
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    font-size: 15px
+    #mainFooter
+        display: flex
+        justify-content: space-between
+        width: 80%
+        max-width: 1200px
+        text-align: left
+        line-height: 30px
+        color: $cfooter
+        #meSocialsContainer
+            #aboutMeFoot
+                max-width: 300px
+            #socialsFoot
+                .icon
+                    padding: 2rem
+                    cursor: pointer
+                    transition: 0.3s
+
+                    &:hover
+                        color: $clight
+        #quickLinksFoot
+            ul
+                list-style: none
+                text-align: left
+                padding: 0
+                li
+                    cursor: pointer
+                    transition: 0.3s
+                    &:hover
+                        color: $clight
+        #contactFoot
+            p
+                .icon
+                    padding-right: 0.5rem
     #copyrights
         font-family: $ftwo
+        height: 100px
+        display: flex
+        text-align: left
+        width: 100%
+        border-top: 1px solid #444444
+        p
+            width: 80%
+            max-width: $maxWidth
+            margin: auto
+            // height: 100%
+            color: $cfooter
