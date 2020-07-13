@@ -10,25 +10,34 @@
     align-items: center
     font-size: 15px
     #mainFooter
-        display: flex
-        justify-content: space-between
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        // grid-gap: 1rem
+        // justify-content: space-between
         width: 80%
         max-width: 1200px
         text-align: left
         line-height: 30px
         color: $cfooter
         #meSocialsContainer
+            // padding-right: 5rem
+            grid-column: span 2
+            grid-row: span 2
             #aboutMeFoot
                 max-width: 300px
             #socialsFoot
                 .icon
-                    padding: 2rem
+                    padding: 2rem 4rem 2rem 0
                     cursor: pointer
                     transition: 0.3s
 
                     &:hover
                         color: $clight
+        // #linksContactContainer
+        //     display: flex
         #quickLinksFoot
+            grid-column: span 1
+            grid-row: span 1
             ul
                 list-style: none
                 text-align: left
@@ -39,7 +48,11 @@
                     &:hover
                         color: $clight
         #contactFoot
+            grid-column: span 1
+            grid-row: span 1
+            padding-bottom: 2rem
             p
+                white-space: nowrap
                 .icon
                     padding-right: 0.5rem
     #copyrights
@@ -55,3 +68,47 @@
             margin: auto
             // height: 100%
             color: $cfooter
+
+@media (max-width: 1000px)
+    #footer
+        #mainFooter
+            grid-gap: 2rem
+            #meSocialsContainer
+                // grid-row: span 2
+                #aboutMeFoot
+                    // max-width: 500px
+                #socialsFoot
+                    .icon
+                        padding: 1rem 2rem 1rem 0
+                        cursor: pointer
+                        transition: 0.3s
+
+                        &:hover
+                            color: $clight
+            #quickLinksFoot
+                grid-column: span 2
+                grid-row: span 1
+            #contactFoot
+                grid-column: span 2
+                grid-row: span 1
+
+@media (max-width: 600px)
+    #footer
+        #mainFooter
+            grid-gap: 1rem
+            #meSocialsContainer
+                grid-column: span 8
+                #aboutMeFoot
+                    max-width: 100%
+                #socialsFoot
+                    .icon
+                        padding: 1rem 2rem 1rem 0
+                        cursor: pointer
+                        transition: 0.3s
+
+                        &:hover
+                            color: $clight
+            #quickLinksFoot
+                grid-column: span 8
+            #contactFoot
+                grid-column: span 8
