@@ -6,16 +6,20 @@ import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <div className="App">
+      {/* <Sidebar /> */}
+      {/* <div id='mainwrapper'> */}
       <Header />
       <Projects />
       <AboutMe />
       <Skills />
       <Contact />
       <Footer />
+      {/* </div> */}
     </div>
   );
 }

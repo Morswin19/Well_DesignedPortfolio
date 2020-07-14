@@ -29,13 +29,23 @@ class Navbar extends React.Component {
             <div id="nav-container" className={this.state.navScroll}>
                 <div id="navbar">
                     <div id="brand">PK SITE</div>
+                    <div></div>
                     <div id="navlinks">
-                        <ul>
-                            <li>About Me</li>
-                            <li>Projects</li>
-                            <li>Skills</li>
-                            <li>Contact</li>
-                        </ul>
+                        {
+                            window.innerWidth > 600 ?
+                                <ul>
+                                    <li>About Me</li>
+                                    <li>Projects</li>
+                                    <li>Skills</li>
+                                    <li>Contact</li>
+                                </ul>
+                                :
+                                <div className="hamburger">
+                                    <span className="hamburgerBox">
+                                        <span className="hamburgerInner"></span>
+                                    </span>
+                                </div>
+                        }
                     </div>
                 </div>
             </div>

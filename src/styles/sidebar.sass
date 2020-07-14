@@ -1,0 +1,17 @@
+@import "./sass-variables.sass"
+
+.sidebar
+    // position: fixed
+    width: 400px
+    height: 100vh
+    background-color: $cmain
+    transform: translateX(100vw)
+    transition: 0.3s
+    z-index: 10000
+
+.sidebarActive
+    width: 400px
+    // height: 100%
+    background-color: $cmain
+    transform: translateX(calc(100vw - 200px))
+    transition: 0.3s
