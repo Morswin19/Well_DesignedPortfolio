@@ -3,7 +3,8 @@ import '../styles/navbar.sass';
 
 class Navbar extends React.Component {
     state = {
-        navScroll: 'navTop'
+        navScroll: 'navTop',
+        resize: 0
     }
 
     handleNavbarScroll = () => {
@@ -18,8 +19,15 @@ class Navbar extends React.Component {
             )
     }
 
+    handleResize = () => {
+        this.setState({
+            resize: window.innerWidth
+        })
+    }
+
     componentDidMount() {
-        window.addEventListener('scroll', this.handleNavbarScroll)
+        window.addEventListener('scroll', this.handleNavbarScroll);
+        window.addEventListener('resize', this.handleResize);
     }
 
     render() {

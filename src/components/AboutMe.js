@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from '../components/Image'
 import '../styles/aboutme.sass';
 import img4 from '../img/4.jpg';
 import img5 from '../img/5.jpg';
@@ -17,24 +18,32 @@ const AboutMe = () => {
             </div>
             <div id="amPhotos">
                 <div id="imgAmContainer">
-                    <div className="imageDiv" id="imgAm1">
+                    <Image
+                        className="imageDiv imgAm1"
+                        img={img4}
+                    />
+                    {/* <div className="imageDiv imgAm1">
                         <img src={img4} alt="" />
-                    </div>
-                    <div className="imageDiv" id="imgAm2">
-                        <img src={img5} alt="" />
-                    </div>
-                    <div className="imageDiv" id="imgAm3">
-                        <img src={img6} alt="" />
-                    </div>
-                    <div className="imageDiv" id="imgAm4">
-                        <img src={img7} alt="" />
-                    </div>
-                    <div className="imageDiv" id="imgAm5">
-                        <img src={img8} alt="" />
-                    </div>
+                    </div> */}
+                    <Image
+                        className="imageDiv imgAm2"
+                        img={img5}
+                    />
+                    <Image
+                        className="imageDiv imgAm3"
+                        img={img6}
+                    />
+                    <Image
+                        className="imageDiv imgAm4"
+                        img={img7}
+                    />
+                    <Image
+                        className="imageDiv imgAm5"
+                        img={img8}
+                    />
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

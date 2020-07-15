@@ -5,16 +5,55 @@
     max-width: $maxWidth
     margin: 0 auto
     display: flex
+    padding-bottom: 1rem
     #imgSkillsContainer
-        display: flex
-        flex-wrap: wrap
+        // display: flex
+        // flex-wrap: wrap
+        // padding-left: 1rem
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
 
         .imageDiv
-            width: 33%
-            max-height: 300px
-            max-width: 250px
+            // width: 33%
+            // height: 250px
+            // width: 170px
+            // max-height: 250px
+            max-width: 200px
             margin: 1rem
+            position: relative
             // width: auto
+            // border: 5px solid green
+            grid-column: span 1
+            grid-row: span 1
+            div
+                opacity: 1
+                position: relative
+                img
+                    // position: absolute
+
+        // .imgSkills1
+        //     grid-column: span 1
+        //     grid-row: span 1
+
+        // .imgSkills2
+        //     grid-column: span 1
+        //     grid-row: span 1
+
+        // .imgSkills3
+        //     grid-column: span 1
+        //     grid-row: span 1
+
+        // .imgSkills4
+        //     grid-column: span 1
+        //     grid-row: span 1
+
+        // .imgSkills5
+        //     grid-column: span 1
+        //     grid-row: span 1
+
+        // .imgSkills6
+        //     grid-column: span 1
+        //     grid-row: span 1
 
 @media (max-width: 1050px)
     #skills
@@ -24,9 +63,9 @@
         display: flex
         flex-direction: column
         #imgSkillsContainer
-            display: flex
-            flex-wrap: wrap
-            justify-content: center
+            // display: flex
+            // flex-wrap: wrap
+            // justify-content: center
             .imageDiv
                 // width: 100%
                 margin: 1rem

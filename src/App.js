@@ -6,7 +6,7 @@ import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Sidebar from './components/Sidebar';
+// import Sidebar from './components/Sidebar';
 
 function App() {
   return (

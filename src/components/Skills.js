@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/skills.sass';
 import img9 from '../img/9.jpg';
 import img10 from '../img/10.jpg';
+import Image from '../components/Image';
 
 const Skills = () => {
     return (
@@ -14,22 +15,26 @@ const Skills = () => {
 
             </div>
             <div id="imgSkillsContainer">
-                <div className="imageDiv" id="imgSkills1">
+                <div className="imageDiv imgSkills1">
+                    <div>
+                        <img src={img9} alt="" />
+                    </div>
+                </div>
+                <div className="imageDiv imgSkills2">
+                    <div>
+                        <img src={img10} alt="" />
+                    </div>
+                </div>
+                <div className="imageDiv imgSkills3">
                     <img src={img9} alt="" />
                 </div>
-                <div className="imageDiv" id="imgSkills1">
+                <div className="imageDiv imgSkills4">
                     <img src={img10} alt="" />
                 </div>
-                <div className="imageDiv" id="imgSkills1">
+                <div className="imageDiv imgSkills5">
                     <img src={img9} alt="" />
                 </div>
-                <div className="imageDiv" id="imgSkills1">
-                    <img src={img10} alt="" />
-                </div>
-                <div className="imageDiv" id="imgSkills1">
-                    <img src={img9} alt="" />
-                </div>
-                <div className="imageDiv" id="imgSkills6">
+                <div className="imageDiv imgSkills6">
                     <img src={img10} alt="" />
                 </div>
             </div>

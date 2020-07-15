@@ -49,13 +49,13 @@ const Footer = () => {
                     <p><FontAwesome
                         className="icon"
                         name="phone"
-                        size="1x"
+                        size="lg"
                         style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                     /> 508 832 713</p>
                     <p><FontAwesome
                         className="icon"
                         name="envelope"
-                        size="1x"
+                        size="lg"
                         style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                     />  piotr.kalman85@gmail.com</p>
                     {/* </div> */}
