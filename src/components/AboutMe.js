@@ -21,6 +21,7 @@ const AboutMe = () => {
                     <Image
                         className="imageDiv imgAm1"
                         img={img4}
+                        section="aboutMe"
                     />
                     {/* <div className="imageDiv imgAm1">
                         <img src={img4} alt="" />
@@ -28,18 +29,22 @@ const AboutMe = () => {
                     <Image
                         className="imageDiv imgAm2"
                         img={img5}
+                        section="aboutMe"
                     />
                     <Image
                         className="imageDiv imgAm3"
                         img={img6}
+                        section="aboutMe"
                     />
                     <Image
                         className="imageDiv imgAm4"
                         img={img7}
+                        section="aboutMe"
                     />
                     <Image
                         className="imageDiv imgAm5"
                         img={img8}
+                        section="aboutMe"
                     />
                 </div>
             </div>

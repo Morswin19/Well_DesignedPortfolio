@@ -16,17 +16,24 @@ class Image extends React.Component {
     }
 
     render() {
+        const { section, img, className } = this.props
         return (
-            <div className={this.props.className}>
-                <img src={this.props.img} alt="" />
+            <div className={className}>
+                {(section === 'project' || section === 'aboutMe') &&
+                    <img src={img} alt="" />
+                }
                 <div>
-                    <FontAwesome
-                        onClick={this.handleClick}
-                        className="icon"
-                        name="plus-circle"
-                        size="3x"
-                        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-                    />
+                    {(section === 'project' || section === 'aboutMe') ?
+                        <FontAwesome
+                            onClick={this.handleClick}
+                            className="icon"
+                            name="plus-circle"
+                            size="3x"
+                            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                        />
+                        :
+                        <img src={img} alt="" />
+                    }
                 </div>
             </div>
         );

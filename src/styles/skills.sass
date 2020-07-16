@@ -5,68 +5,89 @@
     max-width: $maxWidth
     margin: 0 auto
     display: flex
-    padding-bottom: 1rem
+    padding-bottom: 3rem
+    #skillsTitles
+        max-width: 450px
+        text-align: left
+        h1
+            margin: 2rem
+        h5
+            margin: 0 2rem
+        p
+            margin: 0 2rem
+
     #imgSkillsContainer
-        // display: flex
-        // flex-wrap: wrap
-        // padding-left: 1rem
         display: grid
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(3, 228px)
+        grid-template-rows: repeat(2, 274px)
+        grid-gap: 0.5rem
 
         .imageDiv
-            // width: 33%
-            // height: 250px
-            // width: 170px
-            // max-height: 250px
-            max-width: 200px
-            margin: 1rem
-            position: relative
-            // width: auto
-            // border: 5px solid green
+            max-width: 228px
             grid-column: span 1
             grid-row: span 1
             div
                 opacity: 1
                 position: relative
                 img
-                    // position: absolute
+                    position: absolute
+                    transition: 0.2s
+                    &:hover
+                        transform: scale(1.2)
+                        z-index: 5
 
-        // .imgSkills1
-        //     grid-column: span 1
-        //     grid-row: span 1
+@media (max-width: 1200px)
+    #skills
+        #imgSkillsContainer
+            display: grid
+            grid-template-columns: repeat(3, 188px)
+            grid-template-rows: repeat(2, 226px)
+            grid-gap: 0.5rem
 
-        // .imgSkills2
-        //     grid-column: span 1
-        //     grid-row: span 1
-
-        // .imgSkills3
-        //     grid-column: span 1
-        //     grid-row: span 1
-
-        // .imgSkills4
-        //     grid-column: span 1
-        //     grid-row: span 1
-
-        // .imgSkills5
-        //     grid-column: span 1
-        //     grid-row: span 1
-
-        // .imgSkills6
-        //     grid-column: span 1
-        //     grid-row: span 1
-
-@media (max-width: 1050px)
+@media (max-width: 1000px)
     #skills
         width: 90%
         max-width: 1200px
         margin: 0 auto
         display: flex
         flex-direction: column
+        #skillsTitles
+            margin: 0 auto
+            max-width: 100%
         #imgSkillsContainer
-            // display: flex
-            // flex-wrap: wrap
-            // justify-content: center
+            margin: 0 auto
+            display: grid
+            grid-template-columns: repeat(3, 228px)
+            grid-template-rows: repeat(2, 274px)
+            grid-gap: 0.5rem
             .imageDiv
                 // width: 100%
+                // margin: 1rem
+                // width: auto
+
+@media (max-width: 650px)
+    #skills
+        width: 90%
+        max-width: 1200px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        #skillsTitles
+            margin: 0 auto
+            max-width: 100%
+            #skillsButton
+                width: 100%
+                display: flex
+                justify-content: center
+            button
                 margin: 1rem
+        #imgSkillsContainer
+            margin: 0 auto
+            display: grid
+            grid-template-columns: repeat(2, 40vw)
+            grid-template-rows: repeat(3, 50vw)
+            grid-gap: 0.5rem
+            .imageDiv
+                // width: 100%
+                // margin: 1rem
                 // width: auto
