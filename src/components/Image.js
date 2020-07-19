@@ -22,7 +22,7 @@ class Image extends React.Component {
                 {(section === 'project' || section === 'aboutMe') &&
                     <img src={img} alt="" />
                 }
-                <div>
+                <div className="imageContainer">
                     {(section === 'project' || section === 'aboutMe') ?
                         <FontAwesome
                             onClick={this.handleClick}
@@ -33,6 +33,12 @@ class Image extends React.Component {
                         />
                         :
                         <img src={img} alt="" />
+                    }
+                    {(section === 'project' || section === "skills") &&
+                        <div className="imageText">
+                            <h2>Main Name</h2>
+                            <h4>Second Name</h4>
+                        </div>
                     }
                 </div>
             </div>

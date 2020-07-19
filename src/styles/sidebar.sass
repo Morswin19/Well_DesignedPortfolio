@@ -1,17 +1,52 @@
 @import "./sass-variables.sass"
 
 .sidebar
-    // position: fixed
-    width: 400px
+    box-sizing: border-box
+    position: fixed
+    width: 300px
     height: 100vh
-    background-color: $cmain
+    background-color: $clight
     transform: translateX(100vw)
     transition: 0.3s
     z-index: 10000
+    top: 0
+    left: 0
+    padding: 30px 50px
+    cursor: default
+    .navIcon
+        width: 100%
+        text-align: right
+        margin-bottom: 40px
+        .icon
+            color: $csecond
+            cursor: pointer
+    ul
+        color: $csecond
+        display: flex
+        flex-direction: column
+        height: 300px
+        text-align: left
+
+        li
+
+            #navSocials
+                width: 100%
+                display: flex
+                align-items: space-between
+                margin-top: 3rem
+
+                .navIcon
+                    margin: 0
+                    text-align: left
+                    font-size: 10px
+
+        #projectList
+            display: flex
+            justify-content: space-between
 
 .sidebarActive
-    width: 400px
+    width: 300px
     // height: 100%
-    background-color: $cmain
-    transform: translateX(calc(100vw - 200px))
+    // background-color: $clight
     transition: 0.3s
+    transform: translateX(calc(100vw - 300px))

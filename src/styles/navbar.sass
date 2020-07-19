@@ -26,7 +26,25 @@
                 padding: 0
                 display: flex
                 justify-content: space-around
-                cursor: pointer
+                li
+                    margin: 0 1rem
+                    position: relative
+                    overflow: hidden
+                    cursor: pointer
+                    a
+                        text-decoration: none
+                        color: $csecond
+
+                    .navLine
+                        width: 1.5rem
+                        height: 3px
+                        background-color: $csecond
+                        // position: absolute
+                        transition: 0.2s
+                        transform: translatex(-100%)
+                    &:hover
+                        .navLine
+                            transform: translate(0)
 
 .navTop
     height: 100px
@@ -36,8 +54,15 @@
     height: 50px
     background: $cfour
     color: $cmain
+    box-shadow: 0px 2px 5px 0px rgba($csecond, 0.75)
     #navbar
         #navlinks
+            ul
+                li
+                    a
+                        color: $cmain !important
+                    div
+                        background-color: $cmain !important
             .hamburger
                 .hamburgerBox
                     .hamburgerInner,
@@ -52,23 +77,23 @@
     border: 0
     margin: 0
     z-index: 10
-    // background-color: #4DD3C0
+    color: $cmain
     outline: none
     transition: transform 0.1s ease-in-out
 
     .hamburgerBox
         position: relative
-        width: 35px
-        height: 35px
+        width: 25px
+        height: 25px
         display: inline-block
 
         &:hover .hamburgerInner
             // background-color: white
         &:hover .hamburgerInner::before
-            top: -15px
+            top: -12px
 
         &:hover .hamburgerInner::after
-            top: 15px
+            top: 12px
 
         .hamburgerInner
             width: 100%
@@ -91,7 +116,30 @@
             transition: .2s
 
         .hamburgerInner::before
-            top: -10px
+            top: -8px
 
         .hamburgerInner::after
-            top: 10px
+            top: 8px
+
+#sidebarBackground
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    z-index: -10
+    transition: 0.2s
+    // background-color: rgba(0,0,0,0.5)
+
+.backgroundActive
+    background-color: rgba(0,0,0,0)
+    // z-index: 500
+
+.backgroundActiveBlack
+    background-color: rgba(0,0,0,0.5)
+    // z-index: 500
+
+.backgroundDisabled
+    background-color: rgba(0,0,0,0.5)
+    // z-index: 500
+    display: none

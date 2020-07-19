@@ -30,22 +30,27 @@ const Skills = () => {
                 <Image
                     className="imageDiv imgSkills2"
                     img={img10}
+                    section="skills"
                 />
                 <Image
                     className="imageDiv imgSkills3"
                     img={img9}
+                    section="skills"
                 />
                 <Image
                     className="imageDiv imgSkills4"
                     img={img10}
+                    section="skills"
                 />
                 <Image
                     className="imageDiv imgSkills5"
                     img={img9}
+                    section="skills"
                 />
                 <Image
                     className="imageDiv imgSkills6"
                     img={img10}
+                    section="skills"
                 />
             </div>
         </div >
