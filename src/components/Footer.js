@@ -37,11 +37,11 @@ const Footer = () => {
                 <div id="quickLinksFoot">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li>Home</li>
-                        <li>About Me</li>
-                        <li>Projects</li>
-                        <li>Skills</li>
-                        <li>Contact Me</li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#aboutMe">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">ContactMe</a></li>
                     </ul>
                 </div>
                 <div id="contactFoot">
@@ -57,7 +57,7 @@ const Footer = () => {
                         name="envelope"
                         size="lg"
                         style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-                    />  piotr.kalman85@gmail.com</p>
+                    />  <a href="mailto:piotr.kalman85@gmail.com">piotr.kalman85@gmail.com</a></p>
                     {/* </div> */}
                 </div>
 

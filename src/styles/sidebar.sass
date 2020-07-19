@@ -3,7 +3,7 @@
 .sidebar
     box-sizing: border-box
     position: fixed
-    width: 300px
+    width: 330px
     height: 100vh
     background-color: $clight
     transform: translateX(100vw)
@@ -13,6 +13,7 @@
     left: 0
     padding: 30px 50px
     cursor: default
+    color: $csecond
     .navIcon
         width: 100%
         text-align: right
@@ -28,6 +29,10 @@
         text-align: left
 
         li
+            overflow: hidden
+            a
+                text-decoration: none
+                color: $csecond
 
             #navSocials
                 width: 100%
@@ -39,14 +44,27 @@
                     margin: 0
                     text-align: left
                     font-size: 10px
+            .sideLine
+                width: 1.5rem
+                height: 3px
+                background-color: $csecond
+                        // position: absolute
+                transition: 0.2s
+                transform: translatex(-100%)
+            &:hover
+                .sideLine
+                    transform: translate(0)
 
-        #projectList
+        .projectList
             display: flex
             justify-content: space-between
 
+            .icon
+                cursor: pointer
+
 .sidebarActive
-    width: 300px
+    width: 330px
     // height: 100%
     // background-color: $clight
     transition: 0.3s
-    transform: translateX(calc(100vw - 300px))
+    transform: translateX(calc(100vw - 330px))

@@ -83,31 +83,31 @@ class Navbar extends React.Component {
                         {
                             window.innerWidth > 1000 ?
                                 <ul>
-                                    <li>
+                                    <li className='navLink'>
                                         <a href="#header">
                                             Home
                                         </a>
                                         <div className="navLine"></div>
                                     </li>
-                                    <li>
+                                    <li className='navLink'>
                                         <a href="#projects">
                                             Projects
                                         </a>
                                         <div className="navLine"></div>
                                     </li>
-                                    <li>
+                                    <li className='navLink'>
                                         <a href="#aboutMe">
                                             About Me
                                         </a>
                                         <div className="navLine"></div>
                                     </li>
-                                    <li>
+                                    <li className='navLink'>
                                         <a href="#skills">
                                             Skills
                                         </a>
                                         <div className="navLine"></div>
                                     </li>
-                                    <li>
+                                    <li className='navLink'>
                                         <a href="#contact">
                                             Contact
                                         </a>
@@ -117,6 +117,7 @@ class Navbar extends React.Component {
                                 :
                                 // <div>
                                 <>
+                                    <div></div>
                                     <div onClick={this.handleSidebarClick} className="hamburger">
                                         <span className="hamburgerBox">
                                             <span className="hamburgerInner"></span>

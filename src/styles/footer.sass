@@ -45,8 +45,11 @@
                 li
                     cursor: pointer
                     transition: 0.3s
-                    &:hover
-                        color: $clight
+                    a
+                        text-decoration: none
+                        color: $cfooter
+                        &:hover
+                            color: $clight
         #contactFoot
             grid-column: span 1
             grid-row: span 1
@@ -55,6 +58,11 @@
                 white-space: nowrap
                 .icon
                     padding-right: 0.5rem
+            a
+                text-decoration: none
+                color: $cfooter
+                &:hover
+                    color: $clight
     #copyrights
         font-family: $ftwo
         height: 100px
@@ -88,6 +96,7 @@
             #quickLinksFoot
                 grid-column: span 2
                 grid-row: span 1
+
             #contactFoot
                 grid-column: span 2
                 grid-row: span 1

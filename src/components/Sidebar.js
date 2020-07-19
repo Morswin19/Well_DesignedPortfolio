@@ -15,19 +15,26 @@ const Sidebar = (props) => {
                 />
             </div>
             <ul>
-                <li>Home</li>
-                <li id="projectList">
-                    <span>Projects</span>
-                    <FontAwesome
-                        // onClick={this.handleClick}
-                        className="icon"
-                        name="plus"
-                        // size="lg"
-                        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-                    />
-                </li>
-                <li>About Me</li>
-                <li>Skills</li>
+                <li><a href="#header">Home</a>
+                    <div className="sideLine"></div></li>
+                <li id="projectsLink">
+                    <div className="projectList">
+                        <a href="#projects">Projects</a>
+                        <FontAwesome
+                            // onClick={this.handleClick}
+                            className="icon"
+                            name="plus"
+                            // size="lg"
+                            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                        />
+                    </div>
+                    <div className="sideLine"></div></li>
+                <li><a href="#aboutMe">About Me</a>
+                    <div className="sideLine"></div></li>
+                <li><a href="#skills">Skills</a>
+                    <div className="sideLine"></div></li>
+                <li><a href="#contact">Contact</a>
+                    <div className="sideLine"></div></li>
                 <li>
                     <div id="navSocials">
                         <div className="navIcon">
@@ -35,7 +42,7 @@ const Sidebar = (props) => {
                                 // onClick={this.handleClick}
                                 className="icon"
                                 name="facebook"
-                                size="2x"
+                                size="3x"
                                 style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                             />
                         </div>
@@ -44,7 +51,7 @@ const Sidebar = (props) => {
                                 // onClick={this.handleClick}
                                 className="icon"
                                 name="linkedin"
-                                size="2x"
+                                size="3x"
                                 style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                             />
                         </div>
@@ -53,7 +60,7 @@ const Sidebar = (props) => {
                                 // onClick={this.handleClick}
                                 className="icon"
                                 name="github"
-                                size="2x"
+                                size="3x"
                                 style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                             />
                         </div>
