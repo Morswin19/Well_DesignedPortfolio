@@ -15,9 +15,9 @@ const Sidebar = (props) => {
                 />
             </div>
             <ul>
-                <li><a href="#header">Home</a>
+                <li onClick={props.click}><a href="#header">Home</a>
                     <div className="sideLine"></div></li>
-                <li id="projectsLink">
+                <li onClick={props.click} id="projectsLink">
                     <div className="projectList">
                         <a href="#projects">Projects</a>
                         <FontAwesome
@@ -29,13 +29,13 @@ const Sidebar = (props) => {
                         />
                     </div>
                     <div className="sideLine"></div></li>
-                <li><a href="#aboutMe">About Me</a>
+                <li onClick={props.click}><a href="#aboutMe">About Me</a>
                     <div className="sideLine"></div></li>
-                <li><a href="#skills">Skills</a>
+                <li onClick={props.click}><a href="#skills">Skills</a>
                     <div className="sideLine"></div></li>
-                <li><a href="#contact">Contact</a>
+                <li onClick={props.click}><a href="#contact">Contact</a>
                     <div className="sideLine"></div></li>
-                <li>
+                <li onClick={props.click}>
                     <div id="navSocials">
                         <div className="navIcon">
                             <FontAwesome
