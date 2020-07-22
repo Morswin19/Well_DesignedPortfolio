@@ -11,7 +11,7 @@ const AboutMe = () => {
     return (
         <div id="aboutMe">
             <div id="amInfo">
-                <h5>About me</h5>
+                <h5>About</h5>
                 <h1>Deserunt esse veritatis maiores quod quia nemo, molestiae suscipit repudiandae nulla iure</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laudantium illum rerum et sint modi, perferendis minus tempore autem animi sequi placeat esse veniam. Explicabo ullam aspernatur dolorum, hic voluptas nesciunt praesentium a, iste quasi, omnis earum expedita veniam. Voluptatum numquam officia tenetur, maxime quod illum placeat. Illo, consequatur itaque.</p>
                 <button>Contact Me</button>
