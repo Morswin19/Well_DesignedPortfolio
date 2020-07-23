@@ -18,7 +18,9 @@ class Projects extends React.Component {
             <div id="projects">
                 <div id="titles">
                     <h5>My Projects</h5>
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                    <h1>See my skills in use</h1>
+                    <p>If you want to find out more about used technology
+                    just click on an image</p>
                     <div id="imgContainer">
                         <Image
                             img={img2}

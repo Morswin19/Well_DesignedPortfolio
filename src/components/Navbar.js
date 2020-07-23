@@ -77,7 +77,7 @@ class Navbar extends React.Component {
         return (
             <div id="nav-container" className={this.state.navScroll}>
                 <div id="navbar">
-                    <div id="brand">PK SITE</div>
+                    <div id="brand"><span>P.KALMAN</span> // PORTFOLIO</div>
                     <div></div>
                     <div id="navlinks">
                         {

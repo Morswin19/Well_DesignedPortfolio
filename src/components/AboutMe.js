@@ -12,20 +12,19 @@ const AboutMe = () => {
         <div id="aboutMe">
             <div id="amInfo">
                 <h5>About</h5>
-                <h1>Deserunt esse veritatis maiores quod quia nemo, molestiae suscipit repudiandae nulla iure</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laudantium illum rerum et sint modi, perferendis minus tempore autem animi sequi placeat esse veniam. Explicabo ullam aspernatur dolorum, hic voluptas nesciunt praesentium a, iste quasi, omnis earum expedita veniam. Voluptatum numquam officia tenetur, maxime quod illum placeat. Illo, consequatur itaque.</p>
+                <h1>Doing more than just coding</h1>
+                <p>I do not know, how to show you the benefits of employing me without this short introduction.
+                I want to write code for you, but this is not the only good thing I can give.
+                    This is what you need to know about me:</p>
                 <button>Contact Me</button>
             </div>
             <div id="amPhotos">
                 <div id="imgAmContainer">
-                    <Image
+                    {/* <Image
                         className="imageDiv imgAm1"
                         img={img4}
                         section="aboutMe"
                     />
-                    {/* <div className="imageDiv imgAm1">
-                        <img src={img4} alt="" />
-                    </div> */}
                     <Image
                         className="imageDiv imgAm2"
                         img={img5}
@@ -45,7 +44,7 @@ const AboutMe = () => {
                         className="imageDiv imgAm5"
                         img={img8}
                         section="aboutMe"
-                    />
+                    /> */}
                 </div>
             </div>
         </div >
