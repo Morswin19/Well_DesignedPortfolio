@@ -16,13 +16,13 @@ const Skills = () => {
                 </div>
 
             </div>
-            <div id="imgSkillsContainer">
+            {/* <div id="imgSkillsContainer"> */}
                 {/* <div className="imageDiv imgSkills1">
                     <div>
                         <img src={img9} alt="" />
                     </div>
                 </div> */}
-                <Image
+                {/* <Image
                     img={img9}
                     className="imageDiv imgSkills1"
                     section="skills"
@@ -31,8 +31,8 @@ const Skills = () => {
                     className="imageDiv imgSkills2"
                     img={img10}
                     section="skills"
-                />
-                <Image
+                /> */}
+                {/* <Image
                     className="imageDiv imgSkills3"
                     img={img9}
                     section="skills"
@@ -41,18 +41,18 @@ const Skills = () => {
                     className="imageDiv imgSkills4"
                     img={img10}
                     section="skills"
-                />
-                <Image
+                /> */}
+                {/* <Image
                     className="imageDiv imgSkills5"
                     img={img9}
                     section="skills"
-                />
-                <Image
+                /> */}
+                {/* <Image
                     className="imageDiv imgSkills6"
                     img={img10}
                     section="skills"
-                />
-            </div>
+                /> */}
+            {/* </div> */}
         </div >
     );
 }

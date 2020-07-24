@@ -7,6 +7,11 @@ const Header = () => {
     return (
         <div id="header">
             <Navbar />
+            <div id="helloText">Hello, I'm Peter,
+            <br />I want to write code <br />
+            for you
+            <button>Show me your skills</button>
+            </div>
         </div>
     );
 }

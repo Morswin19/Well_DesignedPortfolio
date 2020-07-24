@@ -32,7 +32,7 @@ class HomeArrow extends React.Component {
             <div>
                 {
                     visible === true &&
-                    < a href="/#" onClick={this.handleArrowClick()} className="homeArrow" >
+                    < a href="/#header" onClick={this.handleArrowClick()} className="homeArrow" >
                         <FontAwesome
                             className="icon"
                             name="arrow-up"
