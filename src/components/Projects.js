@@ -16,55 +16,53 @@ class Projects extends React.Component {
     render() {
         return (
             <div id="projects">
-                <div id="titles">
-                    <h5>My Projects</h5>
-                    <h1>See my skills in use</h1>
-                    <p>If you want to find out more about used technology
+                <h5>Projects</h5>
+                <h1>See my skills in use</h1>
+                <p>If you want to find out more about used technology
                     just click on an image</p>
-                    <div id="imgContainer">
-                        <Image
-                            img={img2}
-                            className="imageDiv img1"
-                            section="project"
-                        />
-                        <Image
-                            img={img3}
-                            className="imageDiv img2"
-                            section="project"
-                        />
-                        <Image
-                            img={img2}
-                            className="imageDiv img3"
-                            section="project"
-                        />
-                        <Image
-                            img={img2}
-                            className="imageDiv img4"
-                            section="project"
-                        />
-                        <Image
-                            img={img3}
-                            className="imageDiv img5"
-                            section="project"
-                        />
-                        <Image
-                            img={img3}
-                            className="imageDiv img6"
-                            section="project"
-                        />
-                        <Image
-                            img={img3}
-                            className="imageDiv img7"
-                            section="project"
-                        />
-                        <Image
-                            img={img2}
-                            className="imageDiv img8"
-                            section="project"
-                        />
-                    </div>
-                    <button>All Projects</button>
+                <div id="imgContainer">
+                    <Image
+                        img={img2}
+                        className="imageDiv img1"
+                        section="project"
+                    />
+                    <Image
+                        img={img3}
+                        className="imageDiv img2"
+                        section="project"
+                    />
+                    <Image
+                        img={img2}
+                        className="imageDiv img3"
+                        section="project"
+                    />
+                    <Image
+                        img={img2}
+                        className="imageDiv img4"
+                        section="project"
+                    />
+                    <Image
+                        img={img3}
+                        className="imageDiv img5"
+                        section="project"
+                    />
+                    <Image
+                        img={img3}
+                        className="imageDiv img6"
+                        section="project"
+                    />
+                    <Image
+                        img={img3}
+                        className="imageDiv img7"
+                        section="project"
+                    />
+                    <Image
+                        img={img2}
+                        className="imageDiv img8"
+                        section="project"
+                    />
                 </div>
+                <button>Show me more on GitHub</button>
             </div>
         );
     }

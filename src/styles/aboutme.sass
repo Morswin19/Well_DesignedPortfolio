@@ -5,6 +5,7 @@
     width: 100%
     // margin-bottom: 5rem
     color: $csecond
+    position: relative
     #amInfo
         // padding: 1rem
         // padding: 1rem 0 0 0
@@ -22,6 +23,7 @@
             text-align: left
             margin: auto
             list-style: none
+            padding-bottom: 300px
             li
                 padding-top: 40px
                 display: flex
@@ -37,34 +39,56 @@
                     background-color: $cthird
                     margin-right: 10px
                     border-radius: 50%
+    #experienceContainer
+        position: absolute
+        z-index: 5       
+        left: 50%
+        transform: translate(-50%)
+        bottom: -300px         
         #experience
+            width: 700px
+            background: $lin4
+            margin: auto
+            position: relative
+            margin-top: 150px
+            display: flex
+            flex-direction: column
+            align-items: center
             h1
-                color: yellow
+                color: $csecond
+                position: absolute
+                top: -50px
+                left: -50px
                 span
-                    color: yellow
+                    color: $clight
+            #experienceList
+                width: 490px
+                text-align: left
+                margin: auto
+                list-style: none
+                color: $clight
+                padding-top: 60px
+                padding-bottom: 50px
+                li
+                    padding-top: 40px
+                    display: flex
+                    // align-items: center
+                    font-size: 16px
 
+                    p
+                        width: 440
 
-    #amPhotos
-        #imgAmContainer
-            display: grid
-            grid-template-columns: repeat(4, 1fr)
-            // grid-template-rows: 50vh 50vh
-            width: 100%
-            .imgAm1
-                grid-column: span 2
-                grid-row: span 2
-            .imgAm2
-                grid-column: span 1
-                grid-row: span 1
-            .imgAm3
-                grid-column: span 1
-                grid-row: span 1
-            .imgAm4
-                grid-column: span 1
-                grid-row: span 1
-            .imgAm5
-                grid-column: span 1
-                grid-row: span 1
+                    span
+                        min-width: 10px
+                        height: 10px
+                        background-color: $cthird
+                        margin-right: 10px
+                        border-radius: 50%
+            button
+                background: rgba(0,0,0,0)
+                border: 2px solid $clight
+                color: $clight
+                font-size: 16px
 
 @media (max-width: 800px)
     #aboutMe

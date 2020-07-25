@@ -19,20 +19,26 @@ const AboutMe = () => {
                     <li><span></span>you will be surprised by my devotion, because I want
                     to learn as much and as fast as possible.</li>
                 </ul>
-                {/* <button>Contact Me</button> */}
+
             </div>
-            {/* <div id="amPhotos">
-            </div> */}
-            <div id="experience">
-                <h1>
-                    Curious about <br />
+            <div id="experienceContainer">
+
+
+                <div id="experience">
+                    <h1>
+                        Curious about <br />
                     my <span>previous experience?</span>
-                </h1>
-                <ul id="experienceList">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                    </h1>
+                    <ul id="experienceList">
+                        <li><span></span>almost 10 years in sale taught me how to talk to clients,
+                    make offers, negotiate deadlines, etc.</li>
+                        <li><span></span>5 years in advertising agency taught me how to
+                    colaborate with graphic designers and read creative brief,</li>
+                        <li><span></span>writing this website taught me how to work fast
+                    and focus on the results.</li>
+                    </ul>
+                    <button>Show me your LinkedIn profile</button>
+                </div>
             </div>
         </div >
     );
