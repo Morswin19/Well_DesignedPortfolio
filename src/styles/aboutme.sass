@@ -3,21 +3,24 @@
 #aboutMe
     background-color: $clight
     width: 100%
-    // margin-bottom: 5rem
     color: $csecond
     position: relative
+    display: flex
+    flex-direction: column
+    jjustify-content: center
+    tex-align: center
     #amInfo
-        // padding: 1rem
-        // padding: 1rem 0 0 0
+        display: flex
+        flex-direction: column
+        align-items: center
         h5
             padding-top: 4rem
             color: $csecond
             margin-top: 0
+            display: inline-block
         h1
-            // color: $cthird
             margin-bottom: 1rem
         p
-            // color: #cccccc
         #aboutList
             width: 490px
             text-align: left
@@ -89,6 +92,10 @@
                 border: 2px solid $clight
                 color: $clight
                 font-size: 16px
+            #experienceImg
+                position: absolute
+                left: 60%
+                top: -60%
 
 @media (max-width: 800px)
     #aboutMe

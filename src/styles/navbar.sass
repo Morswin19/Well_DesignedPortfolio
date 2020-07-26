@@ -31,25 +31,33 @@
                 padding: 0
                 display: flex
                 justify-content: space-around
-                .navLink
+                .navItem
                     margin: 0 1rem
                     position: relative
-                    overflow: hidden
                     cursor: pointer
-                    a
-                        text-decoration: none
-                        color: $clight
+                    width: 100px
+                    text-align: center
+                    height: 40px
+                    display: flex
+                    justify-content: center
+                    align-items: center
 
-                    .navLine
-                        width: 1.5rem
-                        height: 3px
-                        background-color: $csecond
-                        // position: absolute
-                        transition: 0.2s
-                        transform: translatex(-100%)
-                    &:hover
+                    .navLink
+                        overflow: hidden
+                        a
+                            text-decoration: none
+                            color: $clight
+
                         .navLine
-                            transform: translate(0)
+                            width: 1.5rem
+                            height: 2px
+                            background-color: $clight
+                            // position: absolute
+                            transition: 0.2s
+                            transform: translatex(-100%)
+                        &:hover
+                            .navLine
+                                transform: translate(0)
 
 .navTop
     height: 100px
@@ -67,13 +75,13 @@
                     a
                         color: $cfour !important
                     div
-                        background-color: $cmain !important
+                        background-color: $cfour !important
             .hamburger
                 .hamburgerBox
                     .hamburgerInner,
                     .hamburgerInner::before,
                     .hamburgerInner::after
-                        background-color: $clight
+                        background-color: $cfour
 
 .hamburger
     // padding: 10px
@@ -103,7 +111,7 @@
         .hamburgerInner
             width: 100%
             height: 4px
-            background-color: $csecond
+            background-color: $clight
             position: absolute
             left: 0
             top: 50%
@@ -114,7 +122,7 @@
         .hamburgerInner::after
             width: 100%
             height: 4px
-            background-color: $csecond
+            background-color: $clight
             position: absolute
             left: 0
             content: ''

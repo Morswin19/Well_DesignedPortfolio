@@ -1,6 +1,7 @@
 import React from 'react';
 // import Image from '../components/Image'
 import '../styles/aboutme.sass';
+import experienceImg from '../img/experienceImg.svg';
 
 const AboutMe = () => {
     return (
@@ -19,11 +20,8 @@ const AboutMe = () => {
                     <li><span></span>you will be surprised by my devotion, because I want
                     to learn as much and as fast as possible.</li>
                 </ul>
-
             </div>
             <div id="experienceContainer">
-
-
                 <div id="experience">
                     <h1>
                         Curious about <br />
@@ -38,6 +36,7 @@ const AboutMe = () => {
                     and focus on the results.</li>
                     </ul>
                     <button>Show me your LinkedIn profile</button>
+                    <img id="experienceImg" src={experienceImg} alt="" />
                 </div>
             </div>
         </div >

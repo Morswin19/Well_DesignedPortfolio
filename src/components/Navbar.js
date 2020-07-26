@@ -83,35 +83,45 @@ class Navbar extends React.Component {
                         {
                             window.innerWidth > 1000 ?
                                 <ul>
-                                    <li className='navLink'>
-                                        <a href="#header">
-                                            Home
-                                        </a>
-                                        <div className="navLine"></div>
+                                    <li className='navItem'>
+                                        <div className="navLink">
+                                            <a href="#header">
+                                                Home
+                                            </a>
+                                            <div className="navLine"></div>
+                                        </div>
                                     </li>
-                                    <li className='navLink'>
-                                        <a href="#projects">
-                                            Projects
-                                        </a>
-                                        <div className="navLine"></div>
+                                    <li className='navItem'>
+                                        <div className="navLink">
+                                            <a href="#projects">
+                                                Projects
+                                            </a>
+                                            <div className="navLine"></div>
+                                        </div>
                                     </li>
-                                    <li className='navLink'>
-                                        <a href="#aboutMe">
-                                            About Me
-                                        </a>
-                                        <div className="navLine"></div>
+                                    <li className='navItem'>
+                                        <div className="navLink">
+                                            <a href="#aboutMe">
+                                                About Me
+                                            </a>
+                                            <div className="navLine"></div>
+                                        </div>
                                     </li>
-                                    <li className='navLink'>
-                                        <a href="#skills">
-                                            Skills
-                                        </a>
-                                        <div className="navLine"></div>
+                                    <li className='navItem'>
+                                        <div className="navLink">
+                                            <a href="#skills">
+                                                Skills
+                                            </a>
+                                            <div className="navLine"></div>
+                                        </div>
                                     </li>
-                                    <li className='navLink'>
-                                        <a href="#contact">
-                                            Contact
-                                        </a>
-                                        <div className="navLine"></div>
+                                    <li className='navItem'>
+                                        <div className="navLink">
+                                            <a href="#contact">
+                                                Contact
+                                            </a>
+                                            <div className="navLine"></div>
+                                        </div>
                                     </li>
                                 </ul>
                                 :
