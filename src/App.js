@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
-import Contact from './components/Contact';
+import Next from './components/Next';
 import Footer from './components/Footer';
 import HomeArrow from './components/HomeArrow';
 // import Sidebar from './components/Sidebar';
@@ -16,8 +16,8 @@ function App() {
         <Header />
         <AboutMe />
         <Skills />
-        {/* <Contact /> */}
         <Projects />
+        <Next />
         <Footer />
         <HomeArrow />
       </div>

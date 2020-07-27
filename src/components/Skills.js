@@ -45,6 +45,7 @@ const Skills = () => {
                     name="REACT ROUTER"
                 />
             </div>
+            
         </div >
     );
 }
