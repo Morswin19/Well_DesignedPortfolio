@@ -3,6 +3,8 @@
 #footer
     min-height: 50vh
     background: $lin2
+    background-size: $bs1
+    background-position: center
     color: $clight
     display: flex
     flex-direction: column
@@ -10,24 +12,25 @@
     align-items: center
     font-size: 15px
     #mainFooter
-        display: grid
-        grid-template-columns: repeat(4, 1fr)
-        // grid-gap: 1rem
-        // justify-content: space-between
         width: 80%
         max-width: 1200px
         text-align: left
         line-height: 30px
         // color: $cfooter
+        display: flex
+        height: 400px
+        align-items: center
+        justify-content: space-between
+        #footerPhoto
+            height: 179px
+            width: 179px
+            background: $clight
+            border-radius: 50%
+            margin: 94.5px
         #meSocialsContainer
-            // padding-right: 5rem
-            grid-column: span 2
-            grid-row: span 2
-            #aboutMeFoot
-                max-width: 300px
             #socialsFoot
                 .icon
-                    padding: 2rem 4rem 2rem 0
+                    margin: 35px
                     cursor: pointer
                     transition: 0.3s
 
@@ -35,27 +38,16 @@
                         color: $cthird
         // #linksContactContainer
         //     display: flex
-        #quickLinksFoot
-            grid-column: span 1
-            grid-row: span 1
-            ul
-                list-style: none
-                text-align: left
-                padding: 0
-                li
-                    cursor: pointer
-                    transition: 0.3s
-                    a
-                        text-decoration: none
-                        color: $clight
-                        &:hover
-                            color: $cthird
+       
         #contactFoot
-            grid-column: span 1
-            grid-row: span 1
             padding-bottom: 2rem
+            h1
+                text-align: left
+                margin: 0
+                padding: 0
             p
                 white-space: nowrap
+                margin: 0
                 .icon
                     padding-right: 0.5rem
             a

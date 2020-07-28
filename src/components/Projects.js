@@ -22,43 +22,23 @@ class Projects extends React.Component {
                     just click on an image</p>
                 <div id="imgContainer">
                     <Image
-                        img={img2}
+                        // img={img2}
                         className="imageDiv img1"
                         section="project"
                     />
                     <Image
-                        img={img3}
+                        // img={img3}
                         className="imageDiv img2"
                         section="project"
                     />
                     <Image
-                        img={img2}
+                        // img={img2}
                         className="imageDiv img3"
                         section="project"
                     />
                     <Image
-                        img={img2}
+                        // img={img2}
                         className="imageDiv img4"
-                        section="project"
-                    />
-                    <Image
-                        img={img3}
-                        className="imageDiv img5"
-                        section="project"
-                    />
-                    <Image
-                        img={img3}
-                        className="imageDiv img6"
-                        section="project"
-                    />
-                    <Image
-                        img={img3}
-                        className="imageDiv img7"
-                        section="project"
-                    />
-                    <Image
-                        img={img2}
-                        className="imageDiv img8"
                         section="project"
                     />
                 </div>

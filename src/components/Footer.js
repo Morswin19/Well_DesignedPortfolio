@@ -7,11 +7,24 @@ const Footer = () => {
     return (
         <div id="footer">
             <div id="mainFooter">
+                <div id="footerPhoto"></div>
+                <div id="contactFoot">
+                    <h1>Let's Talk:</h1>
+                    <p><FontAwesome
+                        className="icon"
+                        name="phone"
+                        size="lg"
+                        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                    /> 508 832 713</p>
+                    <p><FontAwesome
+                        className="icon"
+                        name="envelope"
+                        size="lg"
+                        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                    />  <a href="mailto:piotr.kalman85@gmail.com">piotr.kalman85@gmail.com</a></p>
+                    {/* </div> */}
+                </div>
                 <div id="meSocialsContainer">
-                    <div id="aboutMeFoot">
-                        <h3>About Me</h3>
-                        <p>I love Guinea Pigs and Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, tenetur.</p>
-                    </div>
                     <div id="socialsFoot">
                         <FontAwesome
                             className="icon"
@@ -33,33 +46,7 @@ const Footer = () => {
                         />
                     </div>
                 </div>
-                {/* <div id="linksContactContainer"> */}
-                <div id="quickLinksFoot">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#aboutMe">About Me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">ContactMe</a></li>
-                    </ul>
-                </div>
-                <div id="contactFoot">
-                    <h3>Contact</h3>
-                    <p><FontAwesome
-                        className="icon"
-                        name="phone"
-                        size="lg"
-                        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-                    /> 508 832 713</p>
-                    <p><FontAwesome
-                        className="icon"
-                        name="envelope"
-                        size="lg"
-                        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-                    />  <a href="mailto:piotr.kalman85@gmail.com">piotr.kalman85@gmail.com</a></p>
-                    {/* </div> */}
-                </div>
+
 
             </div>
             <div id="copyrights">

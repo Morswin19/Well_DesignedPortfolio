@@ -28,21 +28,25 @@
             list-style: none
             padding-bottom: 300px
             li
-                padding-top: 40px
+                margin-top: 40px
                 display: flex
                 // align-items: center
                 font-size: 50px
+                // border: 2px solid yellow
 
                 p
                     width: 440
                     font-size: 16px
+                    // border: 2px solid green
 
                 span
                     min-width: 10px
                     height: 10px
                     background-color: $cthird
                     margin-right: 10px
+                    margin-top: 7px
                     border-radius: 50%
+                    // border: 2px solid red
     #experienceContainer
         position: absolute
         z-index: 5       
@@ -87,6 +91,7 @@
                         height: 10px
                         background-color: $cthird
                         margin-right: 10px
+                        margin-top: 7px
                         border-radius: 50%
                         
             button
@@ -94,9 +99,12 @@
                 border: 1px solid $clight
                 color: $clight
                 font-size: 16px
+                &:hover
+                    background: $clight
+                    color: #A14DD9
             #experienceImg
                 position: absolute
-                left: 60%
+                left: 65%
                 top: -60%
 
 @media (max-width: 800px)

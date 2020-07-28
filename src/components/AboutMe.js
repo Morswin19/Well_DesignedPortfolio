@@ -15,10 +15,10 @@ const AboutMe = () => {
                 <ul id="aboutList">
                     <li><span></span><p>you can depend on me, because I am patient and precise,
                     I like people :)</p></li>
-                    <li><span></span>you will NEVER hear "it's impossible" from me, because
-                    I am determined to find solutions,</li>
-                    <li><span></span>you will be surprised by my devotion, because I want
-                    to learn as much and as fast as possible.</li>
+                    <li><span></span><p>you will NEVER hear "it's impossible" from me, because
+                    I am determined to find solutions,</p></li>
+                    <li><span></span><p>you will be surprised by my devotion, because I want
+                    to learn as much and as fast as possible.</p></li>
                 </ul>
             </div>
             <div id="experienceContainer">
@@ -28,12 +28,12 @@ const AboutMe = () => {
                     my <span>previous experience?</span>
                     </h1>
                     <ul id="experienceList">
-                        <li><span></span>almost 10 years in sale taught me how to talk to clients,
-                    make offers, negotiate deadlines, etc.</li>
-                        <li><span></span>5 years in advertising agency taught me how to
-                    colaborate with graphic designers and read creative brief,</li>
-                        <li><span></span>writing this website taught me how to work fast
-                    and focus on the results.</li>
+                        <li><span></span><p>almost 10 years in sale taught me how to talk to clients,
+                    make offers, negotiate deadlines, etc.</p></li>
+                        <li><span></span><p>5 years in advertising agency taught me how to
+                    colaborate with graphic designers and read creative brief,</p></li>
+                        <li><span></span><p>writing this website taught me how to work fast
+                    and focus on the results.</p></li>
                     </ul>
                     <button>Show me your LinkedIn profile</button>
                     <img id="experienceImg" src={experienceImg} alt="" />
