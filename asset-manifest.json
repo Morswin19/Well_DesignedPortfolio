@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Well_DesignedPortfolio/static/css/main.ef6e7b91.chunk.css",
-    "main.js": "/Well_DesignedPortfolio/static/js/main.9bac004d.chunk.js",
-    "main.js.map": "/Well_DesignedPortfolio/static/js/main.9bac004d.chunk.js.map",
+    "main.css": "/Well_DesignedPortfolio/static/css/main.76f071e5.chunk.css",
+    "main.js": "/Well_DesignedPortfolio/static/js/main.d148bd71.chunk.js",
+    "main.js.map": "/Well_DesignedPortfolio/static/js/main.d148bd71.chunk.js.map",
     "runtime-main.js": "/Well_DesignedPortfolio/static/js/runtime-main.c210389c.js",
     "runtime-main.js.map": "/Well_DesignedPortfolio/static/js/runtime-main.c210389c.js.map",
-    "static/js/2.37d1e607.chunk.js": "/Well_DesignedPortfolio/static/js/2.37d1e607.chunk.js",
-    "static/js/2.37d1e607.chunk.js.map": "/Well_DesignedPortfolio/static/js/2.37d1e607.chunk.js.map",
+    "static/js/2.d6d44839.chunk.js": "/Well_DesignedPortfolio/static/js/2.d6d44839.chunk.js",
+    "static/js/2.d6d44839.chunk.js.map": "/Well_DesignedPortfolio/static/js/2.d6d44839.chunk.js.map",
     "index.html": "/Well_DesignedPortfolio/index.html",
-    "precache-manifest.5d57582b7261c6af8beab3dca136ebb1.js": "/Well_DesignedPortfolio/precache-manifest.5d57582b7261c6af8beab3dca136ebb1.js",
+    "precache-manifest.abdcab94e5cb56948171b7a63e4c1cad.js": "/Well_DesignedPortfolio/precache-manifest.abdcab94e5cb56948171b7a63e4c1cad.js",
     "service-worker.js": "/Well_DesignedPortfolio/service-worker.js",
-    "static/css/main.ef6e7b91.chunk.css.map": "/Well_DesignedPortfolio/static/css/main.ef6e7b91.chunk.css.map",
-    "static/js/2.37d1e607.chunk.js.LICENSE.txt": "/Well_DesignedPortfolio/static/js/2.37d1e607.chunk.js.LICENSE.txt",
+    "static/css/main.76f071e5.chunk.css.map": "/Well_DesignedPortfolio/static/css/main.76f071e5.chunk.css.map",
+    "static/js/2.d6d44839.chunk.js.LICENSE.txt": "/Well_DesignedPortfolio/static/js/2.d6d44839.chunk.js.LICENSE.txt",
     "static/media/2.jpg": "/Well_DesignedPortfolio/static/media/2.6d5ed434.jpg",
     "static/media/3.jpg": "/Well_DesignedPortfolio/static/media/3.7f2a931f.jpg",
     "static/media/experienceImg.svg": "/Well_DesignedPortfolio/static/media/experienceImg.41858fa7.svg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c210389c.js",
-    "static/js/2.37d1e607.chunk.js",
-    "static/css/main.ef6e7b91.chunk.css",
-    "static/js/main.9bac004d.chunk.js"
+    "static/js/2.d6d44839.chunk.js",
+    "static/css/main.76f071e5.chunk.css",
+    "static/js/main.d148bd71.chunk.js"
   ]
 }
