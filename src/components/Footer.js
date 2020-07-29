@@ -2,12 +2,13 @@ import React from 'react';
 import '../styles/footer.sass';
 import FontAwesome from 'react-fontawesome';
 // import faStyles from 'font-awesome/css/font-awesome.css';
+import pkPhoto from '../img/pkPhotosmall.JPG'
 
 const Footer = () => {
     return (
         <div id="footer">
             <div id="mainFooter">
-                <div id="footerPhoto"></div>
+                <div id="footerPhoto"><img src={pkPhoto} alt="" /></div>
                 <div id="contactFoot">
                     <h1>Let's Talk:</h1>
                     <p><FontAwesome

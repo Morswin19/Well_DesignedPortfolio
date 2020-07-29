@@ -27,6 +27,14 @@
             background: $clight
             border-radius: 50%
             margin: 94.5px
+            overflow: hidden
+            position: relative
+            img
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translateX(-63%) translateY(-50%)
+                height: 100%
         #meSocialsContainer
             #socialsFoot
                 .icon
@@ -67,48 +75,3 @@
             margin: auto
             // height: 100%
             color: $clight
-
-@media (max-width: 1000px)
-    #footer
-        #mainFooter
-            grid-gap: 2rem
-            #meSocialsContainer
-                // grid-row: span 2
-                #aboutMeFoot
-                    // max-width: 500px
-                #socialsFoot
-                    .icon
-                        padding: 1rem 2rem 1rem 0
-                        cursor: pointer
-                        transition: 0.3s
-
-                        &:hover
-                            color: $clight
-            #quickLinksFoot
-                grid-column: span 2
-                grid-row: span 1
-
-            #contactFoot
-                grid-column: span 2
-                grid-row: span 1
-
-@media (max-width: 600px)
-    #footer
-        #mainFooter
-            grid-gap: 1rem
-            #meSocialsContainer
-                grid-column: span 8
-                #aboutMeFoot
-                    max-width: 100%
-                #socialsFoot
-                    .icon
-                        padding: 1rem 2rem 1rem 0
-                        cursor: pointer
-                        transition: 0.3s
-
-                        &:hover
-                            color: $clight
-            #quickLinksFoot
-                grid-column: span 8
-            #contactFoot
-                grid-column: span 8
