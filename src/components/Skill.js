@@ -4,7 +4,7 @@ import "../styles/skill.sass"
 const Skill = (props) => {
     return (
         <div className="skill">
-            <div className="skillImg"></div>
+            <div className="skillImg"><img src={props.img} alt="" /></div>
             <p>{props.name}</p>
         </div>
     );

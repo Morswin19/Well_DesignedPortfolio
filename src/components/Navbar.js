@@ -78,7 +78,7 @@ class Navbar extends React.Component {
             <div id="nav-container" className={this.state.navScroll}>
                 <div id="navbar">
                     <div id="brand"><span>P.KALMAN</span> // PORTFOLIO</div>
-                    <div></div>
+                    {/* <div></div> */}
                     <div id="navlinks">
                         {
                             window.innerWidth > 1000 ?
@@ -87,6 +87,23 @@ class Navbar extends React.Component {
                                         <div className="navLink">
                                             <a href="#header">
                                                 Home
+                                            </a>
+                                            <div className="navLine"></div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li className='navItem'>
+                                        <div className="navLink">
+                                            <a href="#aboutMe">
+                                                About Me
+                                            </a>
+                                            <div className="navLine"></div>
+                                        </div>
+                                    </li>
+                                    <li className='navItem'>
+                                        <div className="navLink">
+                                            <a href="#skillsTitles">
+                                                Skills
                                             </a>
                                             <div className="navLine"></div>
                                         </div>
@@ -101,23 +118,7 @@ class Navbar extends React.Component {
                                     </li>
                                     <li className='navItem'>
                                         <div className="navLink">
-                                            <a href="#aboutMe">
-                                                About Me
-                                            </a>
-                                            <div className="navLine"></div>
-                                        </div>
-                                    </li>
-                                    <li className='navItem'>
-                                        <div className="navLink">
-                                            <a href="#skills">
-                                                Skills
-                                            </a>
-                                            <div className="navLine"></div>
-                                        </div>
-                                    </li>
-                                    <li className='navItem'>
-                                        <div className="navLink">
-                                            <a href="#contact">
+                                            <a href="#footer">
                                                 Contact
                                             </a>
                                             <div className="navLine"></div>
