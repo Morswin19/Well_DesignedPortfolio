@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/Well_DesignedPortfolio/static/css/main.3dccd291.chunk.css",
-    "main.js": "/Well_DesignedPortfolio/static/js/main.6a973c57.chunk.js",
-    "main.js.map": "/Well_DesignedPortfolio/static/js/main.6a973c57.chunk.js.map",
+    "main.css": "/Well_DesignedPortfolio/static/css/main.f39a1f12.chunk.css",
+    "main.js": "/Well_DesignedPortfolio/static/js/main.6ac73677.chunk.js",
+    "main.js.map": "/Well_DesignedPortfolio/static/js/main.6ac73677.chunk.js.map",
     "runtime-main.js": "/Well_DesignedPortfolio/static/js/runtime-main.c210389c.js",
     "runtime-main.js.map": "/Well_DesignedPortfolio/static/js/runtime-main.c210389c.js.map",
     "static/js/2.8571b4d1.chunk.js": "/Well_DesignedPortfolio/static/js/2.8571b4d1.chunk.js",
     "static/js/2.8571b4d1.chunk.js.map": "/Well_DesignedPortfolio/static/js/2.8571b4d1.chunk.js.map",
     "index.html": "/Well_DesignedPortfolio/index.html",
-    "precache-manifest.8bcde741a8083a38679ede1ca2118be9.js": "/Well_DesignedPortfolio/precache-manifest.8bcde741a8083a38679ede1ca2118be9.js",
+    "precache-manifest.49e13d65276b06e88d739d3b5d7dea4a.js": "/Well_DesignedPortfolio/precache-manifest.49e13d65276b06e88d739d3b5d7dea4a.js",
     "service-worker.js": "/Well_DesignedPortfolio/service-worker.js",
-    "static/css/main.3dccd291.chunk.css.map": "/Well_DesignedPortfolio/static/css/main.3dccd291.chunk.css.map",
+    "static/css/main.f39a1f12.chunk.css.map": "/Well_DesignedPortfolio/static/css/main.f39a1f12.chunk.css.map",
     "static/js/2.8571b4d1.chunk.js.LICENSE.txt": "/Well_DesignedPortfolio/static/js/2.8571b4d1.chunk.js.LICENSE.txt",
-    "static/media/2.jpg": "/Well_DesignedPortfolio/static/media/2.6d5ed434.jpg",
-    "static/media/3.jpg": "/Well_DesignedPortfolio/static/media/3.7f2a931f.jpg",
     "static/media/angular.svg": "/Well_DesignedPortfolio/static/media/angular.78b7e783.svg",
     "static/media/bootstrap.svg": "/Well_DesignedPortfolio/static/media/bootstrap.8687fd47.svg",
     "static/media/css.svg": "/Well_DesignedPortfolio/static/media/css.85f9d272.svg",
@@ -29,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.c210389c.js",
     "static/js/2.8571b4d1.chunk.js",
-    "static/css/main.3dccd291.chunk.css",
-    "static/js/main.6a973c57.chunk.js"
+    "static/css/main.f39a1f12.chunk.css",
+    "static/js/main.6ac73677.chunk.js"
   ]
 }
