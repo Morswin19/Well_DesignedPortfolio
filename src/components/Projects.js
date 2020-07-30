@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/projects.sass';
-import img2 from '../img/2.jpg';
-import img3 from '../img/3.jpg';
+// import img2 from '../img/2.jpg';
+// import img3 from '../img/3.jpg';
 import Image from './Image'
 
 class Projects extends React.Component {

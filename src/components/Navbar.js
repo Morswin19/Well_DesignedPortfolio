@@ -78,10 +78,9 @@ class Navbar extends React.Component {
             <div id="nav-container" className={this.state.navScroll}>
                 <div id="navbar">
                     <div id="brand"><span>P.KALMAN</span> // PORTFOLIO</div>
-                    {/* <div></div> */}
                     <div id="navlinks">
                         {
-                            window.innerWidth > 1000 ?
+                            window.innerWidth > 1100 ?
                                 <ul>
                                     <li className='navItem'>
                                         <div className="navLink">
@@ -143,7 +142,7 @@ class Navbar extends React.Component {
                                     /> */}
                                         <div
                                             id="sidebarBackground"
-                                            class={this.state.backgroundClass}
+                                            className={this.state.backgroundClass}
                                             onClick={this.handleEscapeClick}>
                                         </div>
                                     </div>

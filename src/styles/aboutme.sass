@@ -7,12 +7,14 @@
     position: relative
     display: flex
     flex-direction: column
-    jjustify-content: center
-    tex-align: center
+    justify-content: center
+    text-align: center
     #amInfo
         display: flex
         flex-direction: column
         align-items: center
+        width: 80%
+        margin: auto
         h5
             padding-top: 4rem
             color: $csecond
@@ -26,18 +28,15 @@
             text-align: left
             margin: auto
             list-style: none
-            padding-bottom: 300px
+            padding: 0px 20px 300px 20px
             li
                 margin-top: 40px
                 display: flex
-                // align-items: center
                 font-size: 50px
-                // border: 2px solid yellow
 
                 p
                     width: 440
                     font-size: 16px
-                    // border: 2px solid green
 
                 span
                     min-width: 10px
@@ -67,6 +66,7 @@
                 position: absolute
                 top: -50px
                 left: -50px
+                text-align: left
                 span
                     color: $clight
             #experienceList
@@ -75,8 +75,7 @@
                 margin: auto
                 list-style: none
                 color: $clight
-                padding-top: 60px
-                padding-bottom: 50px
+                padding: 60px 20px 50px 20px
                 li
                     padding-top: 40px
                     display: flex
@@ -107,3 +106,42 @@
                 left: 65%
                 top: -60%
 
+@media(max-width: 900px)
+    #aboutMe
+        #aboutList
+            width: 400px
+            li
+                p
+                    width: 390px
+                    margin: 0 30px
+        #experienceContainer
+            #experience
+                width: 400px
+                #experienceList
+                    width: 350px
+                    padding: 40px 20px 30px 20px
+                #experienceImg
+                    position: absolute
+                    left: 65%
+                    top: -55%
+                    transform: scale(0.6)
+
+@media(max-width: 600px)
+    #aboutMe
+        #experienceContainer
+            #experience
+                h1
+                    color: $csecond
+                    position: absolute
+                    top: -35px
+                    left: -35px
+                    text-align: left
+                    span
+                        color: $clight
+                #experienceImg
+                    position: absolute
+                    left: 50%
+                    top: -50%
+                    transform: scale(0.5)
+            
+             

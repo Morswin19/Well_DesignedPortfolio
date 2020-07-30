@@ -8,6 +8,7 @@
 
 html
   scroll-behavior: smooth
+  
 
 body
   margin: 0
@@ -16,6 +17,7 @@ body
   color: $csecond
   font-family: $fone
   box-sizing: border-box
+  font-size: 16px
 
 button
   width: 250px
@@ -51,9 +53,18 @@ h1, p
     height: 100%
     object-fit: cover
 
-// #mainWrapper
-//   position: relative
-//   z-index: -1
+#mainWrapper
+  position: relative
+  overflow-x: hidden
+  // overflow: hidden
 
 // .App
 //   position: relative
+
+@media(max-width: 600px)
+  body
+    font-size: 14px
+  h1
+    font-size: 24px
+  p
+    font-size: 14px
