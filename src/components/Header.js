@@ -8,11 +8,13 @@ const Header = () => {
     return (
         <div id="header">
             <Navbar />
-            <div id="helloText">Hello, I'm Peter,
+            <div id="helloTextContainer">
+                <div id="helloText">Hello, I'm Peter,
                 <br />I want to write code <br />
                 for you
                 <button>Show me your skills</button>
-                <img id="headerImg" src={headerImg} alt="" />
+                    <img id="headerImg" src={headerImg} alt="" />
+                </div>
             </div>
         </div>
     );
