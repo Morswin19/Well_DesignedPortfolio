@@ -25,8 +25,7 @@ class Footer extends React.Component {
             <div id="footer">
                 <div id="mainFooter">
                     {/* <div id="footerContainer"> */}
-                    {window.innerWidth > 900 && (<div id="footerPhoto"><img src={pkPhoto} alt="" /></div>)
-                    }
+                    <div id="footerPhoto"><img src={pkPhoto} alt="" /></div> 
                     <div id="contactFootContainer">
                         <div></div>
                         <div id="contactFoot">

@@ -6,7 +6,7 @@ const Next = () => {
         <div id="next">
 
             <div id="nextDeveloper">
-                <h1>So why chose me for your next
+                <h1>So why choose me for your next
                 Junior Front-End Developer?</h1>
                 <ul id="nextDeveloperList">
                     <li><span></span><p>you will gain a reliable team member, as you can learn from

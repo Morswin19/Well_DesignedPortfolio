@@ -85,7 +85,7 @@ class Navbar extends React.Component {
                                     <li className='navItem'>
                                         <div className="navLink">
                                             <a href="#header">
-                                                Home
+                                                Hello
                                             </a>
                                             <div className="navLine"></div>
                                         </div>
