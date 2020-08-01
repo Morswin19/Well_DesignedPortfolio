@@ -31,8 +31,10 @@ class HomeArrow extends React.Component {
         return (
             <div>
                 {
-                    visible === true &&
-                    < a href="/#header" onClick={this.handleArrowClick()} className="homeArrow" >
+                    (visible === true
+                        && window.innerWidth >= 900
+                    ) &&
+                    < a href="/#" onClick={this.handleArrowClick()} className="homeArrow" >
                         <FontAwesome
                             className="icon"
                             name="arrow-up"

@@ -2,7 +2,8 @@ import React from 'react';
 import '../styles/footer.sass';
 import FontAwesome from 'react-fontawesome';
 // import faStyles from 'font-awesome/css/font-awesome.css';
-import pkPhoto from '../img/pkPhotosmall.JPG'
+// import pkPhoto from '../img/pkPhotosmall.JPG'
+import pkPhoto from '../img/pkImg.png'
 
 class Footer extends React.Component {
     state = {
@@ -53,42 +54,40 @@ class Footer extends React.Component {
                         </div>
                     </div>
                     <div id="meSocialsContainer">
-                        <div id="socialsFoot">
-                            <div className="navIcon">
-                                <a href="https://www.facebook.com/piotr.kalman" rel="noopener noreferrer" target="_blank">
-                                    <FontAwesome
-                                        // onClick={this.handleClick}
-                                        className="icon"
-                                        name="facebook"
-                                        size="3x"
-                                        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-                                    />
-                                </a>
-                            </div>
-                            <div className="navIcon">
-                                <a href="https://www.linkedin.com/in/piotr-kalman/" rel="noopener noreferrer" target="_blank"
-                                >
-                                    <FontAwesome
-                                        // onClick={this.handleClick}
-                                        className="icon"
-                                        name="linkedin"
-                                        size="3x"
-                                        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-                                    />
-                                </a>
-                            </div>
-                            <div className="navIcon">
-                                <a href="https://github.com/Morswin19" rel="noopener noreferrer" target="_blank"
-                                >
-                                    <FontAwesome
-                                        // onClick={this.handleClick}
-                                        className="icon"
-                                        name="github"
-                                        size="3x"
-                                        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-                                    />
-                                </a>
-                            </div>
+                        <div className="navIcon">
+                            <a href="https://www.facebook.com/piotr.kalman" rel="noopener noreferrer" target="_blank">
+                                <FontAwesome
+                                    // onClick={this.handleClick}
+                                    className="icon"
+                                    name="facebook"
+                                    size="3x"
+                                    style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                                />
+                            </a>
+                        </div>
+                        <div className="navIcon">
+                            <a href="https://www.linkedin.com/in/piotr-kalman/" rel="noopener noreferrer" target="_blank"
+                            >
+                                <FontAwesome
+                                    // onClick={this.handleClick}
+                                    className="icon"
+                                    name="linkedin"
+                                    size="3x"
+                                    style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                                />
+                            </a>
+                        </div>
+                        <div className="navIcon">
+                            <a href="https://github.com/Morswin19" rel="noopener noreferrer" target="_blank"
+                            >
+                                <FontAwesome
+                                    // onClick={this.handleClick}
+                                    className="icon"
+                                    name="github"
+                                    size="3x"
+                                    style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                                />
+                            </a>
                         </div>
                     </div>
 
