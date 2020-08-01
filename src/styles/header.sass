@@ -2,16 +2,17 @@
 
 #header
     position: relative
-    height: 100vh
-    min-height: $hmain
+    min-height: 100vh
     z-index: 10
     background: $lin1
     background-size: $bs2
     background-position: right
     #helloTextContainer
-        width: 1200px
+        width: 1300px
         margin: auto
         position: relative
+        padding-bottom: 50px
+        // margin-left: 50px
         #helloText
             padding-top: 20vh
             // padding-left: 100px
@@ -20,6 +21,7 @@
             font-size: 60px
             font-weight: 900
             color: $cfour
+            margin-left: 30px
             // position: relative
 
             button
@@ -42,6 +44,7 @@
     #header
         #helloTextContainer
             #helloText
+                padding-top: 25vh
                 font-size: 55px
                 button
                     &:hover
@@ -50,5 +53,109 @@
                     bottom: -200px
                     // left: 0
                     // display: none
-                    left: calc(20vw + 200px)
+                    left: calc(20vw + 250px)
                     transform: scale(1.2)
+
+@media(max-width: 1300px)
+    #header
+        // height: 60vh
+        #helloTextContainer
+            width: 900px
+            #helloText
+                padding-top: 20vh
+                font-size: 50px
+                button
+                    &:hover
+                #headerImg
+                    position: absolute
+                    bottom: 120px
+                    // left: 0
+                    // display: none
+                    left: calc(20vw + 50px)
+                    transform: scale(1)
+                button
+                    margin-top: 600px
+
+@media(max-width: 1000px)
+    #header
+        #helloTextContainer
+            width: 650px
+            #helloText
+                padding-top: 20vh
+                font-size: 45px
+                button
+                    &:hover
+                #headerImg
+                    position: absolute
+                    bottom: 50px
+                    // left: 0
+                    // display: none
+                    left: calc(20vw - 150px)
+                    transform: scale(0.8)
+                button
+                    margin-top: 450px
+
+@media(max-width: 750px)
+    #header
+        #helloTextContainer
+            width: 650px
+            position: default
+            #helloText
+                padding-top: 25vh
+                font-size: 40px
+                button
+                    &:hover
+                #headerImg
+                    position: absolute
+                    bottom: -60px
+                    // left: 0
+                    // display: none
+                    left: auto
+                    right: -50px
+                    transform: scale(0.5)
+                button
+                    margin-top: 250px
+
+@media(max-width: 550px)
+    #header
+        #helloTextContainer
+            width: 100vw
+            // display: flex
+            #helloText
+                padding-top: 20vh
+                font-size: 32px
+                // text-align: center
+                button
+                    &:hover
+                #headerImg
+                    position: absolute
+                    bottom: -30px
+                    // left: 0
+                    // display: none
+                    left: auto
+                    right: 0px
+                    transform: scale(0.5)
+                button
+                    margin-top: 350px
+
+@media(max-width: 300px)
+    #header
+        #helloTextContainer
+            width: 250vw
+            // display: flex
+            #helloText
+                padding-top: 20vh
+                font-size: 25px
+                margin: 0 10px
+                button
+                    &:hover
+                #headerImg
+                    position: absolute
+                    bottom: -30px
+                    // left: 0
+                    // display: none
+                    left: auto
+                    right: 50px
+                    transform: scale(0.35)
+                button
+                    margin-top: 300px

@@ -11,13 +11,14 @@
     z-index: 10000
     top: 0
     left: 0
-    padding: 30px 50px
+    padding: 30px 50px 0 0px
     cursor: default
     color: $csecond
     .navIcon
         width: 100%
         text-align: right
         margin-bottom: 40px
+        cursor: pointer
         .icon
             color: $csecond
             cursor: pointer
@@ -25,14 +26,44 @@
         color: $csecond
         display: flex
         flex-direction: column
-        height: 300px
+        // height: 300px
         text-align: left
+        justify-content: space-between
+        font-size: 16px
+        font-weight: 700
+
+        #projectsLink
+            .icon
+                margin-left: 30px
+                cursor: pointer
+            #projectSidebarList
+                margin: 0 30px !important
+                li
+                    margin-top: 20px
+                    margin-bottom: 0
+                    cursor: pointer
+                    .sideLine2
+                        width: 1.5rem
+                        height: 3px
+                        background-color: $csecond
+                                // position: absolute
+                        transition: 0.2s
+                        transform: translatex(-100%)
+                    &:hover
+                        .sideLine2
+                            transform: translate(0)
 
         li
             overflow: hidden
+            width: 150px
+            // border: 2px solid red
+            margin-bottom: 20px
             a
                 text-decoration: none
                 color: $csecond
+                width: 100px
+            // span
+            //     width: 100px
 
             #navSocials
                 width: 100%
@@ -42,8 +73,11 @@
 
                 .navIcon
                     margin: 0
+                    width: 40px
+                    height: 40px
                     text-align: left
                     font-size: 10px
+                    margin-right: 35px
             .sideLine
                 width: 1.5rem
                 height: 3px
@@ -55,12 +89,6 @@
                 .sideLine
                     transform: translate(0)
 
-        .projectList
-            display: flex
-            justify-content: space-between
-
-            .icon
-                cursor: pointer
 
 .sidebarActive
     width: 330px

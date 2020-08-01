@@ -7,13 +7,11 @@
     background-position: center
     color: $clight
     display: flex
-    flex-direction: column
-    justify-content: space-between
+    justify-content: center
     align-items: center
     font-size: 15px
     #mainFooter
-        width: 80%
-        max-width: 1200px
+        width: 1200px
         text-align: left
         line-height: 30px
         // color: $cfooter
@@ -27,7 +25,8 @@
             min-width: 179px
             background: $clight
             border-radius: 50%
-            margin: 94.5px
+            margin-right: 115px
+            margin-left: 5px
             overflow: hidden
             position: relative
             img
@@ -39,7 +38,9 @@
                 width: auto
         #meSocialsContainer
             #socialsFoot
-                margin-left: 50px
+                margin-left: 65px
+                a
+                    color: $clight
                 .icon
                     margin: 28px
                     cursor: pointer
@@ -50,8 +51,12 @@
         // #linksContactContainer
         //     display: flex
        
-        #contactFoot
-            padding-bottom: 2rem
+        #contactFootContainer
+            // padding-bottom: 2rem
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
             h1
                 text-align: left
                 margin: 30px 0
@@ -70,7 +75,7 @@
                 &:hover
                     color: $cthird
     #copyrights
-        font-family: $ftwo
+        font-family: $fone
         height: 50px
         display: flex
         text-align: left
@@ -83,7 +88,6 @@
             // margin: auto
             // height: 100%
             color: $clight
-            font-family: $fthird
             color: $cthird
 
 @media(max-width: 1220px)
@@ -102,7 +106,7 @@
                     margin-left: 30px
                     display: flex
                     flex-direction: row
-            #contactFoot
+            #contactFootContainer
                 padding-bottom: 2rem
                     // padding-left: 20px
                     // margin-left: px
@@ -115,7 +119,7 @@
                     margin-left: 30px
                     display: flex
                     flex-direction: column
-            #contactFoot
+            #contactFootContainer
                 padding-bottom: 2rem
                     // padding-left: 20px
                     // margin-left: px

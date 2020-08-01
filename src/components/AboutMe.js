@@ -25,7 +25,7 @@ const AboutMe = () => {
                 <div id="experience">
                     <h1>
                         Curious about <br />
-                    my <span>previous experience?</span>
+                        <span id="my">my </span><span>previous experience?</span>
                     </h1>
                     <ul id="experienceList">
                         <li><span></span><p>almost 10 years in sale taught me how to talk to clients,
