@@ -35,7 +35,8 @@ const AboutMe = () => {
                         <li><span></span><p>writing this website taught me how to work fast
                     and focus on the results.</p></li>
                     </ul>
-                    <button>Show me your LinkedIn profile</button>
+                    <a href="https://www.linkedin.com/in/piotr-kalman/" rel="noopener noreferrer" target="_blank"
+                    ><button>Show me your LinkedIn profile</button></a>
                     <img id="experienceImg" src={experienceImg} alt="" />
                 </div>
             </div>

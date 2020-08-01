@@ -55,7 +55,7 @@ class Footer extends React.Component {
                     <div id="meSocialsContainer">
                         <div id="socialsFoot">
                             <div className="navIcon">
-                                <a href="https://www.facebook.com/piotr.kalman" target="_blank">
+                                <a href="https://www.facebook.com/piotr.kalman" rel="noopener noreferrer" target="_blank">
                                     <FontAwesome
                                         // onClick={this.handleClick}
                                         className="icon"
@@ -66,7 +66,7 @@ class Footer extends React.Component {
                                 </a>
                             </div>
                             <div className="navIcon">
-                                <a href="https://www.linkedin.com/in/piotr-kalman/" target="_blank"
+                                <a href="https://www.linkedin.com/in/piotr-kalman/" rel="noopener noreferrer" target="_blank"
                                 >
                                     <FontAwesome
                                         // onClick={this.handleClick}
@@ -78,7 +78,7 @@ class Footer extends React.Component {
                                 </a>
                             </div>
                             <div className="navIcon">
-                                <a href="https://github.com/Morswin19" target="_blank"
+                                <a href="https://github.com/Morswin19" rel="noopener noreferrer" target="_blank"
                                 >
                                     <FontAwesome
                                         // onClick={this.handleClick}
