@@ -1,7 +1,8 @@
 @import "./sass-variables.sass"
 
 #footer
-    min-height: 30vh
+    box-sizing: border-box
+    min-height: 400px
     background: $lin2
     background-size: $bs1
     background-position: center
@@ -12,23 +13,14 @@
     font-size: 15px
     overflow: hidden
     #mainFooter
-        width: 100%
-        text-align: left
-        line-height: 30px
-        // color: $cfooter
         display: flex
+        width: 100%
         height: 400px
-        align-items: center
+        margin: auto
         justify-content: center
-        // #footerContainer
-        // border: 5px solid red
         #footerPhoto
-            height: 100%
-            width: 400px
-            // margin-right: 115px
-            margin-left: 5px
-            position: relative
             // border: 5px solid white
+            width: 400px
             img
                 position: absolute
                 left: 50%
@@ -36,133 +28,179 @@
                 transform: translateX(-63%) translateY(-48%)
                 height: 108%
                 width: auto
-        #meSocialsContainer
-            display: flex
-            // border: 5px solid yellow
-            width: 300px
-            padding-left: 20px
-            margin-left: 16px
-            a
-                color: $clight
-                .icon
-                    width: 50px
-                    height: 50px
-                    margin-right: 44px
-                    margin-top: 40px
-                    cursor: pointer
-                    transition: 0.3s
-
-                    &:hover
-                        color: rgba(248, 164, 18, 0.8)
-        // #linksContactContainer
-        //     display: flex
-       
-        #contactFootContainer
-            // padding-bottom: 2rem
-            height: 100%
+        #footerCopyrightsContainer
+            // border: 5px solid peru
             display: flex
             flex-direction: column
-            justify-content: space-between
-            // border: 5px solid peru
-            h1
-                text-align: left
-                margin: 30px 20px
-                padding: 0
-                font-size: 36px
-                
-            p
-                white-space: nowrap
-                width: 250px
-                margin: 0
-                margin-bottom: 20px
-                .icon
-                    padding-right: 0.5rem
-            a
-                text-decoration: none
-                color: $clight
-                &:hover
-                    color: $cthird
-    #copyrights
-        font-family: $fone
-        height: 50px
-        display: flex
-        text-align: left
-        width: 100%
-        margin-right: 50px
-        p
-            width: 100%
-            max-width: $maxWidth
-            text-align: right
-            // margin: auto
-            // height: 100%
-            color: $clight
-            color: $cthird
+            // justify-content: space-between
+            #contactSocialsContainer
+                display: flex
+                #contactFootContainer
+                    // border: 5px solid yellow
+                    // width: 400px
+                    min-width: 225px
+                    h1
+                        font-size: 36px
+                        padding-top: 90px
+                        padding-bottom: 30px
+                        margin: 0
+                    p
+                        margin-bottom: 20px
+                        .icon
+                        a
+                            text-decoration: none
+                            color: $clight
+                            &:hover
+                                color: $cthird
+                #meSocialsContainer
+                    // border: 5px solid red
+                    display: flex
+                    // width: 300px
+                    height: 300px
+                    display: flex
+                    align-items: center
+                    margin-left: 0px
+                    transform: translateX(100px)
+                    .navIcon
+                        width: 50px
+                        height: 50px
+                        margin: 0
+                        padding: 0
+                        // border: 5px solid lavender
+                        margin-left: 45px
+                        a
+                            color: $clight
+                            &:hover
+                                color: $cthird
+                            .icon
+                                margin: 0
+                                padding: 0
 
-@media(max-width: 1220px)
+            #copyrights
+                // border: 5px solid lawngreen
+                height: 50px
+                display: flex
+                p
+                    width: 100%
+                    max-width: $maxWidth
+                    color: $cthird
+
+@media(max-width: 1200px)
     #footer
         #mainFooter
-            #meSocialsContainer
-                display: flex
-                flex-direction: column
-                padding-left: px
-                // border: 5px solid red
-                .navIcon
-                    width: 70px
-                    a
-                        color: $clight
-                        .icon
-                            width: 50px
-                            height: 50px
-                            margin-right: 0px
-                            margin-left: 90px
-                            margin-top: 40px
-                            cursor: pointer
-                            transition: 0.3s
+            #footerCopyrightsContainer
+                #contactSocialsContainer
+                    #meSocialsContainer
+                        margin-top: 50px
+                        flex-direction: column
+                        height: 300px
+                        transform: translateX(0px)
+                        .navIcon
+                            // border: 5px solid lavender
+                            margin-left: 45px
+                            margin-top: 20px
 
-                            &:hover
-                                color: rgba(248, 164, 18, 0.8)
-            #contactFootContainer
-                // padding-bottom: 2rem
-                // border: 5px solid peru
 @media(max-width: 900px)
     #footer
         #mainFooter
-            #meSocialsContainer
-                margin-left: 30px
-                display: flex
-                    // flex-direction: row
-            #contactFootContainer
-                // padding-bottom: 2rem
-                    // padding-left: 20px
-                    // margin-left: px
-
-@media(max-width: 700px)
-    #footer
-        #mainFooter
-            #meSocialsContainer
-                    // margin-left: 0px
-                display: flex
-                flex-direction: column
-                .navIcon
-                    a
-                        .icon
+            #footerCopyrightsContainer
+                #contactSocialsContainer
+                    flex-direction: column
+                    #meSocialsContainer
+                        margin-top: 20px
+                        margin-bottom: 30px
+                        flex-direction: row
+                        // height: 300px
+                        transform: translateX(0px)
+                        height: 50px
+                        .navIcon
+                            // border: 5px solid lavender
+                            margin-left: 45px
+                            margin-top: 20px
                             margin-left: 0px
-            #contactFootContainer
-                padding-bottom: 0
-                margin-left: 50px
-
-@media(max-width: 420px)
+                            margin-right: 45px
+            #footerPhoto
+                width: 400px
+                img
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translateX(-63%) translateY(-30%)
+                    height: 90%
+                    width: auto
+@media(max-width: 600px)
     #footer
+        height: auto
         #mainFooter
-            #meSocialsContainer
-                .navIcon
-                    a
-                        .icon
-                            margin-left: -100px
-                            margin-top: 0px
-                            margin-bottom: 40px
-            #contactFootContainer
-                padding-bottom: 0
-                    // padding-left: 20px
-                margin-left: 120px
-            
+            flex-direction: column
+            #footerCopyrightsContainer
+                margin-left: 30px
+                margin-top: 330px
+                margin-bottom: 20px
+                #contactSocialsContainer
+                    flex-direction: column
+                    #meSocialsContainer
+                        margin-top: 20px
+                        margin-bottom: 30px
+                        flex-direction: row
+                        // height: 300px
+                        transform: translateX(0px)
+                        height: 50px
+                        .navIcon
+                            // border: 5px solid lavender
+                            margin-left: 45px
+                            margin-top: 20px
+                            margin-left: 0px
+                            margin-right: 45px
+                    
+            #footerPhoto
+                margin: auto
+                // width: 400px
+                height: 400px
+                order: 1
+                img
+                    position: relative
+                    left: 0%
+                    top: 0%
+                    transform: translateX(5%) translateY(-80%)
+                    height: 100%
+                    width: auto
+
+@media(max-width: 330px)
+    #footer
+        height: auto
+        #mainFooter
+            flex-direction: column
+            #footerCopyrightsContainer
+                margin-left: 30px
+                margin-top: 0px
+                margin-bottom: 20px
+                #contactSocialsContainer
+                    flex-direction: column
+                    #meSocialsContainer
+                        margin-top: 20px
+                        margin-bottom: 30px
+                        flex-direction: row
+                        // height: 300px
+                        transform: translateX(0px)
+                        height: 50px
+                        .navIcon
+                            // border: 5px solid lavender
+                            margin-left: 45px
+                            margin-top: 20px
+                            margin-left: 0px
+                            margin-right: 45px
+                    
+            #footerPhoto
+                display: none
+                margin: auto
+                // width: 400px
+                height: 400px
+                order: 1
+                img
+                    position: relative
+                    left: 0%
+                    top: 0%
+                    transform: translateX(0%) translateY(0%)
+                    height: 100%
+                    width: auto

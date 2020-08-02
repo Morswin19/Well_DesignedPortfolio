@@ -1,7 +1,9 @@
 import React from 'react';
 import '../styles/projects.sass';
-// import img2 from '../img/2.jpg';
-// import img3 from '../img/3.jpg';
+import img7 from '../img/7.jpg';
+import img2 from '../img/5.jpg';
+import img10 from '../img/10.jpg';
+import img11 from '../img/11.jpg';
 import Image from './Image'
 
 class Projects extends React.Component {
@@ -22,22 +24,22 @@ class Projects extends React.Component {
                     just click on an image</p>
                 <div id="imgContainer">
                     <Image
-                        // img={img2}
+                        img={img2}
                         className="imageDiv img1"
                         section="project"
                     />
                     <Image
-                        // img={img3}
+                        img={img7}
                         className="imageDiv img2"
                         section="project"
                     />
                     <Image
-                        // img={img2}
+                        img={img10}
                         className="imageDiv img3"
                         section="project"
                     />
                     <Image
-                        // img={img2}
+                        img={img11}
                         className="imageDiv img4"
                         section="project"
                     />
