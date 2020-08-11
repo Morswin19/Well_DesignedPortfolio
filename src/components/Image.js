@@ -16,7 +16,7 @@ class Image extends React.Component {
     }
 
     render() {
-        const { section, img, className } = this.props
+        const { section, img, className, mainName } = this.props
         return (
             <div className={className}>
                 {(section === 'project' || section === 'aboutMe') &&
@@ -36,7 +36,7 @@ class Image extends React.Component {
                     }
                     {(section === 'project' || section === "skills") &&
                         <div className="imageText">
-                            <h2>Main Name</h2>
+                            <h2>{mainName}</h2>
                             <h4>Second Name</h4>
                         </div>
                     }

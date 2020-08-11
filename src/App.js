@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Next from './components/Next';
 import Footer from './components/Footer';
 import HomeArrow from './components/HomeArrow';
+
 // import Sidebar from './components/Sidebar';
 
 function App() {
