@@ -8,20 +8,69 @@ import project1 from '../img/12.png';
 import Image from './Image';
 import ProjectActive from './ProjectActive';
 
-class Projects extends React.Component {
-    state = {
-        reset: 0,
-        activeTitle: 'DECIDER',
-        activeListItems: ['HTML, CSS',
+const projectData = [
+    ['EVENT SITE',
+        ['HTML, CSS',
             'Vanilla JS',
             'Bootstrap',
             'Sass',
             'Canvas'],
-        activeImg: project1
+        img2]
+    ,
+    ['DECIDER',
+        ['HTML, CSS',
+            'Vanilla JS',
+            'Bootstrap',
+            'Sass',
+            'Canvas'],
+        project1]
+    ,
+    ['LANDING PAGE',
+        ['HTML, CSS',
+            'Vanilla JS',
+            'Bootstrap',
+            'Sass',
+            'Canvas'],
+        img10],
+    ['COLLECTION',
+        ['HTML, CSS',
+            'Vanilla JS',
+            'Bootstrap',
+            'Sass',
+            'Canvas'],
+        img11]
+]
+
+class Projects extends React.Component {
+    state = {
+        reset: 0,
+        projectNumber: 0,
+        projectClassname: 'projectDisactive'
     }
 
     handleClick = (e) => {
-        console.log(e.target)
+        let imageClass = (e.target.parentElement.parentElement.className)
+        if (imageClass === 'imageDiv img1') {
+            this.setState({
+                projectNumber: 0
+            })
+        } else if (imageClass === 'imageDiv img2') {
+            this.setState({
+                projectNumber: 1
+            })
+        } else if (imageClass === 'imageDiv img3') {
+            this.setState({
+                projectNumber: 2
+            })
+        } else if (imageClass === 'imageDiv img4') {
+            this.setState({
+                projectNumber: 3
+            })
+        }
+        this.setState({
+            projectClassname: 'projectActive'
+        })
+        
     }
 
     render() {
@@ -37,22 +86,28 @@ class Projects extends React.Component {
                         className="imageDiv img1"
                         section="project"
                         mainName="Decider"
+                        handleClick={this.handleClick}
                     />
                     <Image
                         img={project1}
                         className="imageDiv img2"
                         section="project"
                         mainName="Decider"
+                        handleClick={this.handleClick}
                     />
                     <Image
                         img={img10}
                         className="imageDiv img3"
                         section="project"
+                        mainName="Decider"
+                        handleClick={this.handleClick}
                     />
                     <Image
                         img={img11}
                         className="imageDiv img4"
                         section="project"
+                        mainName="Decider"
+                        handleClick={this.handleClick}
                     />
                 </div>
                 <button>Show me more on GitHub</button>
@@ -65,9 +120,10 @@ class Projects extends React.Component {
                     </ul>
                 </div>
                 <ProjectActive
-                    title={this.state.activeTitle}
-                    list={this.state.activeListItems}
-                    img={this.state.activeImg}
+                    title={projectData[this.state.projectNumber][0]}
+                    list={projectData[this.state.projectNumber][1]}
+                    img={projectData[this.state.projectNumber][2]}
+                    active={this.state.projectClassname}
                 />
             </div>
         );

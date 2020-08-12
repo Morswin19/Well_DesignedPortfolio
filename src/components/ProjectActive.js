@@ -7,7 +7,7 @@ class ProjectActive extends React.Component {
         const { title, list, img } = this.props
         const activeList = list.map(item => <li key={item}>{item}</li>)
         return (
-            <div id="projectActive">
+            <div id="projectActive" className={this.props.active}>
                 <div id="projectContainer">
                     <div id="activeText">
                         <h1>{this.props.title}</h1>
