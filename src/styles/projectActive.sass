@@ -18,9 +18,10 @@
     transition: 0.5s
     #projectContainer
         width: 100%
-        height: 650px
         display: flex
         margin-top: 50px
+        padding-top: 50px
+        padding-bottom: 50px
         justify-content: center
         // align-items: center
         place-items: center
@@ -44,11 +45,13 @@
             img
                 width: 720px
                 height: 540px
+        button
+            width: 300px
 
 @media(max-width: 1200px)
     .projectActive
         #projectContainer
-            height: 550px
+            // height: 550px
             margin-top: 0
             #activeText
                 width: 200px
@@ -61,15 +64,19 @@
                 img
                     width: 600px
                     height: 450px
+            button
+                width: 200px
             
 @media(max-width: 900px)
     .projectActive
         #projectContainer
-            height: 70%
+            // height: 75%
             flex-direction: column
             align-items: center
+            // justify-content: space-around
+            padding: 10px 0px
             #activeText
-                width: 80%
+                width: 500px
                 text-align: center
                 margin: 0
                 display: flex
@@ -77,15 +84,80 @@
                 align-items: center
                 margin-bottom: 30px
                 // border: 2px solid red
+                // padding-top: 30px
+                h1
+                    margin-bottom: 0px
                 ul
                     display: flex
                     flex-wrap: wrap
                     text-align: left
                     justify-content: center
                     // border: 2px solid yellow
-                    padding-left: 50px
+                    margin-left: 40px
+                    margin-bottom: 0px
+                    
                     li
                         width: 40%
                         margin: 10px
+                        // margin-left: 31px
                         text-align: 
                         // border: 2px solid lawngreen
+            #activeImg
+                width: 500px
+                height: 375px
+                min-width: 500px
+                min-height: 375px
+                overflow: hidden
+                img
+                    width: 500px
+                    height: 375px
+            button
+                margin: 0px
+
+@media(max-width: 600px)
+    .projectActive
+        margin-top: 15px
+        #projectContainer
+            height: 85%
+            #activeText
+                width: 300px
+                text-align: center
+                margin: 0
+                display: flex
+                flex-direction: column
+                align-items: center
+                // margin-bottom: 10px
+                // border: 2px solid red
+                // padding-top: 10px
+                h1
+                    margin-bottom: 10px
+                ul
+                    display: flex
+                    flex-wrap: wrap
+                    text-align: left
+                    justify-content: center
+                    // border: 2px solid yellow
+                    width: 100%
+                    margin-left: 0px
+                    margin: 0px
+                    
+                    li
+                        // width: 50%
+                        margin: 10px
+                        margin-bottom: 0px
+                        // margin-left: 31px
+                        text-align: 
+                        // border: 2px solid lawngreen
+            #activeImg
+                width: 300px
+                height: 225px
+                min-width: 300px
+                min-height: 225px
+                overflow: hidden
+                margin-bottom: 10px
+                img
+                    width: 300px
+                    height: 225px
+                    min-height: 225px
+            button
+                margin: 0px

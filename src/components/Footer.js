@@ -24,13 +24,11 @@ class Footer extends React.Component {
         return (
             <div id="footer">
                 <div id="mainFooter">
-                    {/* <div id="footerContainer"> */}
                     <div id="footerPhoto"><img src={pkPhoto} alt="" /></div>
                     <div id="footerCopyrightsContainer">
                         <div id="contactSocialsContainer">
                             <div id="contactFootContainer">
-                                {/* <div></div> */}
-                                {/* <div id="contactFoot"> */}
+                         
                                 <h1>Let's Talk:</h1>
                                 <p><FontAwesome
                                     className="icon"
@@ -44,9 +42,7 @@ class Footer extends React.Component {
                                     size="lg"
                                     style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                                 />  <a href="mailto:piotr.kalman85@gmail.com">piotr.kalman85@gmail.com</a></p>
-                                {/* </div> */}
-                                {/* </div> */}
-                                {/* </div> */}
+                              
                             </div>
                             <div id="meSocialsContainer">
                                 <div className="navIcon">

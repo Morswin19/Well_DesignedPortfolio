@@ -15,7 +15,9 @@ const projectData = [
             'Bootstrap',
             'Sass',
             'Canvas'],
-        img2]
+        img2,
+        'https://morswin19.github.io/event-site-react/#/'
+    ]
     ,
     ['DECIDER',
         ['HTML, CSS',
@@ -23,7 +25,9 @@ const projectData = [
             'Bootstrap',
             'Sass',
             'Canvas'],
-        project1]
+        project1,
+        'https://morswin19.github.io/decider/'
+    ]
     ,
     ['LANDING PAGE',
         ['HTML, CSS',
@@ -31,14 +35,16 @@ const projectData = [
             'Bootstrap',
             'Sass',
             'Canvas'],
-        img10],
+        img10,
+        'https://morswin19.github.io/Organisation-Page-Layout/'],
     ['COLLECTION',
         ['HTML, CSS',
             'Vanilla JS',
             'Bootstrap',
             'Sass',
             'Canvas'],
-        img11]
+        img11,
+        'https://morswin19.github.io/my-albums-react-app/#/my-albums-react-app/']
 ]
 
 class Projects extends React.Component {
@@ -70,7 +76,7 @@ class Projects extends React.Component {
         this.setState({
             projectClassname: 'projectActive'
         })
-        
+
     }
 
     render() {
@@ -123,6 +129,7 @@ class Projects extends React.Component {
                     title={projectData[this.state.projectNumber][0]}
                     list={projectData[this.state.projectNumber][1]}
                     img={projectData[this.state.projectNumber][2]}
+                    link={projectData[this.state.projectNumber][3]}
                     active={this.state.projectClassname}
                 />
             </div>
