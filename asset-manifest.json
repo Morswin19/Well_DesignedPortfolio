@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Well_DesignedPortfolio/static/css/main.e411d106.chunk.css",
-    "main.js": "/Well_DesignedPortfolio/static/js/main.09545454.chunk.js",
-    "main.js.map": "/Well_DesignedPortfolio/static/js/main.09545454.chunk.js.map",
+    "main.css": "/Well_DesignedPortfolio/static/css/main.cbef5f8e.chunk.css",
+    "main.js": "/Well_DesignedPortfolio/static/js/main.63a4148b.chunk.js",
+    "main.js.map": "/Well_DesignedPortfolio/static/js/main.63a4148b.chunk.js.map",
     "runtime-main.js": "/Well_DesignedPortfolio/static/js/runtime-main.c210389c.js",
     "runtime-main.js.map": "/Well_DesignedPortfolio/static/js/runtime-main.c210389c.js.map",
-    "static/js/2.04cc94b6.chunk.js": "/Well_DesignedPortfolio/static/js/2.04cc94b6.chunk.js",
-    "static/js/2.04cc94b6.chunk.js.map": "/Well_DesignedPortfolio/static/js/2.04cc94b6.chunk.js.map",
+    "static/js/2.ae953b11.chunk.js": "/Well_DesignedPortfolio/static/js/2.ae953b11.chunk.js",
+    "static/js/2.ae953b11.chunk.js.map": "/Well_DesignedPortfolio/static/js/2.ae953b11.chunk.js.map",
     "index.html": "/Well_DesignedPortfolio/index.html",
-    "precache-manifest.309ca7bb923e0e2cd1e7e37b6009b444.js": "/Well_DesignedPortfolio/precache-manifest.309ca7bb923e0e2cd1e7e37b6009b444.js",
+    "precache-manifest.48a90cba49112e35477561165341f0eb.js": "/Well_DesignedPortfolio/precache-manifest.48a90cba49112e35477561165341f0eb.js",
     "service-worker.js": "/Well_DesignedPortfolio/service-worker.js",
-    "static/css/main.e411d106.chunk.css.map": "/Well_DesignedPortfolio/static/css/main.e411d106.chunk.css.map",
-    "static/js/2.04cc94b6.chunk.js.LICENSE.txt": "/Well_DesignedPortfolio/static/js/2.04cc94b6.chunk.js.LICENSE.txt",
+    "static/css/main.cbef5f8e.chunk.css.map": "/Well_DesignedPortfolio/static/css/main.cbef5f8e.chunk.css.map",
+    "static/js/2.ae953b11.chunk.js.LICENSE.txt": "/Well_DesignedPortfolio/static/js/2.ae953b11.chunk.js.LICENSE.txt",
     "static/media/10.jpg": "/Well_DesignedPortfolio/static/media/10.f6e3a2ea.jpg",
     "static/media/11.jpg": "/Well_DesignedPortfolio/static/media/11.739c5332.jpg",
     "static/media/12.png": "/Well_DesignedPortfolio/static/media/12.0e0cf2a1.png",
@@ -20,6 +20,7 @@
     "static/media/bootstrap.svg": "/Well_DesignedPortfolio/static/media/bootstrap.8687fd47.svg",
     "static/media/css.svg": "/Well_DesignedPortfolio/static/media/css.85f9d272.svg",
     "static/media/experienceImg.svg": "/Well_DesignedPortfolio/static/media/experienceImg.41858fa7.svg",
+    "static/media/experienceImg2.svg": "/Well_DesignedPortfolio/static/media/experienceImg2.1575a150.svg",
     "static/media/headerImg.svg": "/Well_DesignedPortfolio/static/media/headerImg.dafcd466.svg",
     "static/media/html.svg": "/Well_DesignedPortfolio/static/media/html.5930ad41.svg",
     "static/media/javascript.svg": "/Well_DesignedPortfolio/static/media/javascript.d85eb612.svg",
@@ -30,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c210389c.js",
-    "static/js/2.04cc94b6.chunk.js",
-    "static/css/main.e411d106.chunk.css",
-    "static/js/main.09545454.chunk.js"
+    "static/js/2.ae953b11.chunk.js",
+    "static/css/main.cbef5f8e.chunk.css",
+    "static/js/main.63a4148b.chunk.js"
   ]
 }
