@@ -51,8 +51,10 @@ class Projects extends React.Component {
     state = {
         reset: 0,
         projectNumber: 0,
-        projectClassname: 'projectDisactive'
+        projectClassname: false
     }
+
+
 
     handleClick = (e) => {
         let imageClass = (e.target.parentElement.parentElement.className)
@@ -76,7 +78,30 @@ class Projects extends React.Component {
         this.setState({
             projectClassname: 'projectActive'
         })
+    }
 
+    handleEscapeKey = (e) => {
+        if (e.keyCode === 27) {
+            this.setState({
+                projectClassname: !this.state.projectClassname
+            })
+        }
+
+    }
+
+    handleEscapeClick = () => {
+        // console.log(e.target)
+        this.setState({
+            projectClassname: !this.state.projectClassname
+        })
+    }
+
+    handleBackgroundClick = (e) => {
+        e.target.id === 'projectActive' && this.handleEscapeClick()
+    }
+
+    componentDidMount() {
+        document.addEventListener('keydown', this.handleEscapeKey)
     }
 
     render() {
@@ -131,6 +156,8 @@ class Projects extends React.Component {
                     img={projectData[this.state.projectNumber][2]}
                     link={projectData[this.state.projectNumber][3]}
                     active={this.state.projectClassname}
+                    handleEscapeClick={this.handleEscapeClick}
+                    handleBackgroundClick={this.handleBackgroundClick}
                 />
             </div>
         );

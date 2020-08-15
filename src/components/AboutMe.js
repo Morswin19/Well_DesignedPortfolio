@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // import Image from '../components/Image'
 import '../styles/aboutme.sass';
 import experienceImg from '../img/experienceImg.svg';
+import experienceImg2 from '../img/experienceImg2.svg';
+// import React, { useState, useEffect } from 'react';
+
 
 const AboutMe = () => {
+    let [scrollValue, setScroll] = useState()
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            setScroll(scrollValue = window.scrollY)
+        })
+    }
+    )
+
     return (
         <div id="aboutMe">
             <div id="amInfo">
@@ -37,7 +49,7 @@ const AboutMe = () => {
                     </ul>
                     <a href="https://www.linkedin.com/in/piotr-kalman/" rel="noopener noreferrer" target="_blank"
                     ><button>Show me your LinkedIn profile</button></a>
-                    <img id="experienceImg" src={experienceImg} alt="" />
+                    <img id="experienceImg" src={scrollValue > 980 ? experienceImg2 : experienceImg} alt="" />
                 </div>
             </div>
         </div >

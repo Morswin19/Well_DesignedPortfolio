@@ -2,8 +2,9 @@
 
 .projectDisactive
     position: fixed
-    z-index: -100
+    // z-index: -100
     opacity: 0
+    transition: 0.5s
 .projectActive
     position: fixed
     width: 100vw
@@ -16,6 +17,28 @@
     left: 0
     opacity: 1
     transition: 0.5s
+    #projectEscape
+        display: grid
+        place-items: center
+        position: absolute
+        top: 50px
+        right: 50px
+        width: 22px
+        height: 22px
+        background: $csecond
+        color: $clight
+        padding: 10px
+        z-index: 100
+        border-radius: 50%
+        text-decoration: none
+        border: 2px solid $clight
+        cursor: pointer
+        
+        &:hover
+            color: $cmain
+            border: 2px solid $cmain
+            background: $cfour
+
     #projectContainer
         width: 100%
         display: flex
