@@ -10,41 +10,46 @@ import ProjectActive from './ProjectActive';
 
 const projectData = [
     ['EVENT SITE',
-        ['HTML, CSS',
+        ['HTML', 'CSS',
             'Vanilla JS',
             'Bootstrap',
             'Sass',
             'Canvas'],
         img2,
-        'https://morswin19.github.io/event-site-react/#/'
+        'https://morswin19.github.io/event-site-react/#/',
+        'helps you with making life changing decisions made with:'
     ]
     ,
     ['DECIDER',
-        ['HTML, CSS',
+        ['HTML', 'CSS',
             'Vanilla JS',
             'Bootstrap',
             'Sass',
             'Canvas'],
         project1,
-        'https://morswin19.github.io/decider/'
+        'https://morswin19.github.io/decider/',
+        'helps you with making life changing decisions made with:'
     ]
     ,
     ['LANDING PAGE',
-        ['HTML, CSS',
+        ['HTML', 'CSS',
             'Vanilla JS',
             'Bootstrap',
             'Sass',
             'Canvas'],
         img10,
-        'https://morswin19.github.io/Organisation-Page-Layout/'],
+        'https://morswin19.github.io/Organisation-Page-Layout/',
+        'helps you with making life changing decisions made with:'
+    ],
     ['COLLECTION',
-        ['HTML, CSS',
+        ['HTML', 'CSS',
             'Vanilla JS',
             'Bootstrap',
             'Sass',
             'Canvas'],
         img11,
-        'https://morswin19.github.io/my-albums-react-app/#/my-albums-react-app/']
+        'https://morswin19.github.io/my-albums-react-app/#/my-albums-react-app/',
+        'helps you with making life changing decisions made with:']
 ]
 
 class Projects extends React.Component {
@@ -155,6 +160,7 @@ class Projects extends React.Component {
                     list={projectData[this.state.projectNumber][1]}
                     img={projectData[this.state.projectNumber][2]}
                     link={projectData[this.state.projectNumber][3]}
+                    description={projectData[this.state.projectNumber][4]}
                     active={this.state.projectClassname}
                     handleEscapeClick={this.handleEscapeClick}
                     handleBackgroundClick={this.handleBackgroundClick}

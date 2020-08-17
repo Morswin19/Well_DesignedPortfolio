@@ -3,41 +3,23 @@
 .projectDisactive
     position: fixed
     // z-index: -100
+    // top: 0
+    // left: 0
     opacity: 0
     transition: 0.5s
+    z-index: -100000
 .projectActive
     position: fixed
-    width: 100vw
-    height: 100vh
-    background-color: rgba($csecond, 0.3)
-    display: grid
-    place-items: center
-    z-index: 100000
     top: 0
     left: 0
     opacity: 1
+    display: grid
+    place-items: center
+    width: 100vw
+    height: 100vh
+    background-color: rgba(67,5,200, 0.8)
     transition: 0.5s
-    #projectEscape
-        display: grid
-        place-items: center
-        position: absolute
-        top: 50px
-        right: 50px
-        width: 22px
-        height: 22px
-        background: $csecond
-        color: $clight
-        padding: 10px
-        z-index: 100
-        border-radius: 50%
-        text-decoration: none
-        border: 2px solid $clight
-        cursor: pointer
-        
-        &:hover
-            color: $cmain
-            border: 2px solid $cmain
-            background: $cfour
+    z-index: 100000
 
     #projectContainer
         width: 100%
@@ -48,28 +30,102 @@
         justify-content: center
         // align-items: center
         place-items: center
-        background: $lin2
-        #activeText
-            width: 300px
-            text-align: left
-            color: $clight
-            margin: 50px
-            h1
-                margin-bottom: 30px
-            ul
-                list-style: square
-                li
-                    font-size: 20px
-                    margin-bottom: 15px
+        // background: $lin2
+        #activeBtnText
+            #activeText
+                box-sizing: border-box
+                width: 420px
+                margin-right: -25px
+                margin-bottom: -25px
+                padding: 20px
+                // padding-top: 5px
+                padding-bottom: 40px
+                background: $clight
+                box-shadow: 0px 0px 30px 5px rgba(#222222,0.75)
+                color: rgb(71,6,145)
+                text-align: left
+                transition: 0.5s
+                z-index: 2
+                h1
+                    margin-bottom: 0px
+                    margin-left: -5px
+                    font-size: 65px
+                    font-weight: 900
+                    line-height: 65px
+                p
+                    margin-right: 0px
+                    margin-bottom: 0px
+                    margin-left: 0px
+                    padding: 0px
+                    padding-right: 0px
+                    color: $cfour
+                    font-size: 17px
+                    font-weight: 500
+                    line-height: 40px
+                ul
+                    margin-left: 40px
+                    li
+                        margin-bottom: 5px
+                        font-size: 20px
+                        text-transform: uppercase
+            
+            a                
+                // border: 2px solid red
+                // z-index: 10
+                button
+                    top: 0px
+                    left: 0px
+                    width: 280px
+                    height: 85px
+                    margin: 0px
+                    margin-top: -20px
+                    background-image: linear-gradient(to right, rgb(67,5,200), darkmagenta)
+                    border: 1px solid $cthird
+                    border-radius: 50px
+                    color: $clight
+                    font-size: 40px
+                    text-transform: lowercase
+                    z-index: 3
+                    &:hover
+                        background-image: linear-gradient(to left, rgb(67,5,200), darkmagenta)
+            #projectEscape
+                position: absolute
+                display: grid
+                place-items: center
+                top: -135px
+                left: 985px
+                transform: rotate(45deg)
+                color: $clight
+                font-size: 70px
+                font-weight: 900
+                cursor: pointer
+                z-index: 100
+                transition: 1s
+                // transition: color 0s
+                
+                &:hover
+                    color: $cthird
+                    // border: 2px solid $cmain
+                    // background: $cfour
+            .escapeBtnGo
+                transform: translateX(1000px)
+                transition: 1s
+
         #activeImg
-            width: 720px
-            height: 540px
+            position: relative
             overflow: hidden
+            width: 600px
+            height: 600px
+            margin-left: -25px
+            box-shadow: 10px 10px 30px 5px rgba(#000000,0.75)
+            z-index: 1
             img
-                width: 720px
-                height: 540px
-        button
-            width: 300px
+                position: relative
+                top: 0
+                left: 10%
+                transform: translateX(-12%) translateY(-2%)
+                z-index: 1
+            
 
 @media(max-width: 1200px)
     .projectActive
@@ -184,3 +240,4 @@
                     min-height: 225px
             button
                 margin: 0px
+
