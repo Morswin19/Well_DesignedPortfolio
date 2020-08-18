@@ -1,20 +1,19 @@
 import React, { useState, useEffect } from 'react';
-// import Image from '../components/Image'
 import '../styles/aboutme.sass';
 import experienceImg from '../img/experienceImg.svg';
 import experienceImg2 from '../img/experienceImg2.svg';
-// import React, { useState, useEffect } from 'react';
 
 
 const AboutMe = () => {
     let [scrollValue, setScroll] = useState()
 
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            setScroll(scrollValue = window.scrollY)
-        })
+    setScroll = () => {
+        scrollValue = window.scrollY
     }
-    )
+
+    useEffect(() => {
+        window.addEventListener('scroll', setScroll)
+    }, [])
 
     return (
         <div id="aboutMe">

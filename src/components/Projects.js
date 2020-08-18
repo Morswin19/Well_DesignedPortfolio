@@ -62,6 +62,7 @@ class Projects extends React.Component {
 
 
     handleClick = (e) => {
+
         let imageClass = (e.target.parentElement.parentElement.className)
         if (imageClass === 'imageDiv img1') {
             this.setState({
@@ -86,7 +87,7 @@ class Projects extends React.Component {
     }
 
     handleEscapeKey = (e) => {
-        if (e.keyCode === 27) {
+        if (e.keyCode === 27 && this.state.projectClassname !== false) {
             this.setState({
                 projectClassname: !this.state.projectClassname
             })
@@ -102,7 +103,7 @@ class Projects extends React.Component {
     }
 
     handleBackgroundClick = (e) => {
-        e.target.id === 'projectActive' && this.handleEscapeClick()
+        e.target.id === 'projectContainer' && this.handleEscapeClick()
     }
 
     componentDidMount() {
@@ -130,6 +131,8 @@ class Projects extends React.Component {
                         section="project"
                         mainName="Decider"
                         handleClick={this.handleClick}
+                        description1="decision making online roulette"
+                        description2="based on Vanilla JS, Canvas click for more info"
                     />
                     <Image
                         img={img10}

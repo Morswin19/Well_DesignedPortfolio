@@ -1,6 +1,5 @@
 import React from 'react';
 import "../styles/projectActive.sass"
-import FontAwesome from 'react-fontawesome';
 
 class ProjectActive extends React.Component {
     state = {
@@ -22,7 +21,7 @@ class ProjectActive extends React.Component {
                             </ul>
                         </div>
                         <a href={link} target="_blank" rel="noopener noreferrer"><button>Show Me</button></a>
-                        <div id="projectEscape" className={!active && 'escapeBtnGo'} onClick={handleEscapeClick}>
+                        <div id="projectEscape" className={!active ? 'escapeBtnGo' : ''} onClick={handleEscapeClick}>
                             +
                         </div>
                     </div>

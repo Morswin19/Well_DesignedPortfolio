@@ -132,64 +132,62 @@
         #projectContainer
             // height: 550px
             margin-top: 0
-            #activeText
-                width: 200px
-                margin: 0
-                margin-right: 50px
+            #activeBtnText
+                #projectEscape
+                    top: -60px
+                    left: 815px
             #activeImg
-                width: 600px
+                width: 450px
                 height: 450px
                 overflow: hidden
                 img
-                    width: 600px
-                    height: 450px
+                    // width: 450px
+                    // height: 450px
+                    transform: scale(0.7) translateX(-25%) translateY(-25%)
+                    left: 0
             button
                 width: 200px
             
 @media(max-width: 900px)
     .projectActive
         #projectContainer
-            // height: 75%
             flex-direction: column
             align-items: center
-            // justify-content: space-around
             padding: 10px 0px
-            #activeText
-                width: 500px
-                text-align: center
+            #activeBtnText
                 margin: 0
-                display: flex
-                flex-direction: column
-                align-items: center
-                margin-bottom: 30px
-                // border: 2px solid red
-                // padding-top: 30px
-                h1
-                    margin-bottom: 0px
-                ul
-                    display: flex
-                    flex-wrap: wrap
-                    text-align: left
-                    justify-content: center
-                    // border: 2px solid yellow
-                    margin-left: 40px
-                    margin-bottom: 0px
-                    
-                    li
-                        width: 40%
-                        margin: 10px
-                        // margin-left: 31px
-                        text-align: 
-                        // border: 2px solid lawngreen
+                #activeText
+                    width: 520px
+                    text-align: center
+                    margin: 0px
+                    flex-direction: column
+                    align-items: center
+                    h1
+                        margin-bottom: 0px
+                    ul
+                        display: flex
+                        flex-wrap: wrap
+                        text-align: left
+                        justify-content: center
+                        margin-left: 40px
+                        margin-bottom: 0px
+                        
+                        li
+                            width: 40%
+                            margin: 10px
+                            text-align: 
+                #projectEscape
+                    top: -20px
+                    left: 470px
+                    color: rgb(71,6,145)
+
             #activeImg
-                width: 500px
-                height: 375px
-                min-width: 500px
-                min-height: 375px
+                width: 520px
+                height: 450px
+                margin: 0px
+                margin-top: -25px
                 overflow: hidden
                 img
-                    width: 500px
-                    height: 375px
             button
                 margin: 0px
 
@@ -198,46 +196,59 @@
         margin-top: 15px
         #projectContainer
             height: 85%
-            #activeText
-                width: 300px
-                text-align: center
-                margin: 0
-                display: flex
-                flex-direction: column
-                align-items: center
-                // margin-bottom: 10px
-                // border: 2px solid red
-                // padding-top: 10px
-                h1
-                    margin-bottom: 10px
-                ul
+            #activeBtnText
+                #activeText
+                    width: 280px
+                    text-align: center
+                    margin: 0
                     display: flex
-                    flex-wrap: wrap
-                    text-align: left
-                    justify-content: center
-                    // border: 2px solid yellow
-                    width: 100%
-                    margin-left: 0px
-                    margin: 0px
-                    
-                    li
-                        // width: 50%
-                        margin: 10px
-                        margin-bottom: 0px
-                        // margin-left: 31px
-                        text-align: 
-                        // border: 2px solid lawngreen
+                    flex-direction: column
+                    align-items: center
+                    h1
+                        margin-bottom: 10px
+                        font-size: 50px
+                        line-height: 50px
+                    p
+                        text-align: left
+                        width: 100%
+                        line-height: 24px
+                    ul
+                        display: flex
+                        // flex-direction: column
+                        flex-wrap: wrap
+                        text-align: left
+                        justify-content: center
+                        // align-items: center
+                        width: 100%
+                        margin-left: 0px
+                        margin: 0px
+                        
+                        li
+                            margin: 10px
+                            margin-bottom: 0px
+                            font-size: 16px
+                a
+                    button
+                        width: 200px
+                        height: 75px
+                        margin-top: -35px
+                        font-size: 35px
+                #projectEscape
+                    top: -20px
+                    left: 252px
+                    font-size: 50px
+                    color: rgb(71,6,145)
             #activeImg
-                width: 300px
+                width: 280px
                 height: 225px
-                min-width: 300px
-                min-height: 225px
+                // min-width: 300px
+                // min-height: 225px
                 overflow: hidden
                 margin-bottom: 10px
                 img
-                    width: 300px
-                    height: 225px
-                    min-height: 225px
-            button
-                margin: 0px
+                    transform: scale(0.5) translateX(-60%) translateY(-60%)
+                    // width: 280px
+                    // height: 225px
+                    // min-height: 225px
+            
 
