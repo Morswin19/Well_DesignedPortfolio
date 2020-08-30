@@ -2,51 +2,33 @@ import React from 'react';
 import '../styles/projects.sass';
 // import img7 from '../img/7.jpg';
 import img2 from '../img/5.jpg';
-import img10 from '../img/10.jpg';
 import img11 from '../img/11.jpg';
 import project1 from '../img/12.png';
+import project2 from '../img/13.PNG';
 import Image from './Image';
 import ProjectActive from './ProjectActive';
 
 const projectData = [
     ['EVENT SITE',
-        ['HTML', 'CSS',
-            'Vanilla JS',
-            'Bootstrap',
-            'Sass',
-            'Canvas'],
+        ['HTML', 'CSS', 'Vanilla JS', 'Bootstrap', 'Sass', 'Canvas'],
         img2,
         'https://morswin19.github.io/event-site-react/#/',
         'helps you with making life changing decisions made with:'
-    ]
-    ,
+    ],
     ['DECIDER',
-        ['HTML', 'CSS',
-            'Vanilla JS',
-            'Bootstrap',
-            'Sass',
-            'Canvas'],
+        ['HTML', 'CSS', 'Vanilla JS', 'Bootstrap', 'Sass', 'Canvas'],
         project1,
         'https://morswin19.github.io/decider/',
         'helps you with making life changing decisions made with:'
     ]
-    ,
-    ['LANDING PAGE',
-        ['HTML', 'CSS',
-            'Vanilla JS',
-            'Bootstrap',
-            'Sass',
-            'Canvas'],
-        img10,
-        'https://morswin19.github.io/Organisation-Page-Layout/',
-        'helps you with making life changing decisions made with:'
+    , ['MY MUSIC',
+        ['HTML', 'CSS', 'React', 'React Router', 'Sass'],
+        project2,
+        'https://morswin19.github.io/my_albums_wd/',
+        'collection of music albums made with:'
     ],
     ['COLLECTION',
-        ['HTML', 'CSS',
-            'Vanilla JS',
-            'Bootstrap',
-            'Sass',
-            'Canvas'],
+        ['HTML', 'CSS', 'Vanilla JS', 'Bootstrap', 'Sass', 'Canvas'],
         img11,
         'https://morswin19.github.io/my-albums-react-app/#/my-albums-react-app/',
         'helps you with making life changing decisions made with:']
@@ -58,8 +40,6 @@ class Projects extends React.Component {
         projectNumber: 0,
         projectClassname: false
     }
-
-
 
     handleClick = (e) => {
 
@@ -135,10 +115,10 @@ class Projects extends React.Component {
                         description2="based on Vanilla JS, Canvas click for more info"
                     />
                     <Image
-                        img={img10}
+                        img={project2}
                         className="imageDiv img3"
                         section="project"
-                        mainName="Decider"
+                        mainName="My Music"
                         handleClick={this.handleClick}
                     />
                     <Image
