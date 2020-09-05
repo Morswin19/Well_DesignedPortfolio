@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { lazy, Suspense, useState, useEffect } from 'react';
 import './App.css';
-import Header from './components/Header';
+// import Header from './components/Header';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
@@ -9,6 +9,10 @@ import Footer from './components/Footer';
 import HomeArrow from './components/HomeArrow';
 
 // import Sidebar from './components/Sidebar';
+
+const Header = lazy(() => import('./components/Header'))
+
+const renderLoader = () => <p>Loading</p>;
 
 function App() {
   let [homeArrowDisplay, allowArrow] = useState(true)
@@ -19,13 +23,15 @@ function App() {
 
   useEffect(() => {
     window.addEventListener('resize', allowArrow)
-  },[])
+  }, [])
 
 
   return (
     <div className="App">
       <div id='mainwrapper'>
-        <Header />
+        <Suspense fallback={renderLoader()}>
+          <Header />
+        </Suspense>
         <AboutMe />
         <Skills />
         <Projects />

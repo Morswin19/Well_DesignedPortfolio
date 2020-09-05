@@ -1,8 +1,6 @@
 import React from 'react';
 import '../styles/footer.sass';
 import FontAwesome from 'react-fontawesome';
-// import faStyles from 'font-awesome/css/font-awesome.css';
-// import pkPhoto from '../img/pkPhotosmall.JPG'
 import pkPhoto from '../img/pkImg.png'
 
 class Footer extends React.Component {
@@ -28,7 +26,7 @@ class Footer extends React.Component {
                     <div id="footerCopyrightsContainer">
                         <div id="contactSocialsContainer">
                             <div id="contactFootContainer">
-                         
+
                                 <h1>Let's Talk:</h1>
                                 <p><FontAwesome
                                     className="icon"
@@ -42,13 +40,12 @@ class Footer extends React.Component {
                                     size="lg"
                                     style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                                 />  <a href="mailto:piotr.kalman85@gmail.com">piotr.kalman85@gmail.com</a></p>
-                              
+
                             </div>
                             <div id="meSocialsContainer">
                                 <div className="navIcon">
                                     <a href="https://www.facebook.com/piotr.kalman" rel="noopener noreferrer" target="_blank">
                                         <FontAwesome
-                                            // onClick={this.handleClick}
                                             className="icon"
                                             name="facebook"
                                             size="3x"
@@ -60,7 +57,6 @@ class Footer extends React.Component {
                                     <a href="https://www.linkedin.com/in/piotr-kalman/" rel="noopener noreferrer" target="_blank"
                                     >
                                         <FontAwesome
-                                            // onClick={this.handleClick}
                                             className="icon"
                                             name="linkedin"
                                             size="3x"
@@ -72,7 +68,6 @@ class Footer extends React.Component {
                                     <a href="https://github.com/Morswin19" rel="noopener noreferrer" target="_blank"
                                     >
                                         <FontAwesome
-                                            // onClick={this.handleClick}
                                             className="icon"
                                             name="github"
                                             size="3x"

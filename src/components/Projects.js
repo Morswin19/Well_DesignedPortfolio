@@ -1,20 +1,19 @@
 import React from 'react';
 import '../styles/projects.sass';
 // import img7 from '../img/7.jpg';
-import img2 from '../img/5.jpg';
-import img11 from '../img/11.jpg';
 import project1 from '../img/12.png';
 import project2 from '../img/13.PNG';
+import project3 from '../img/14.PNG';
 import Image from './Image';
 import ProjectActive from './ProjectActive';
 
 const projectData = [
-    ['EVENT SITE',
-        ['HTML', 'CSS', 'Vanilla JS', 'Bootstrap', 'Sass', 'Canvas'],
-        img2,
-        'https://morswin19.github.io/event-site-react/#/',
-        'helps you with making life changing decisions made with:'
-    ],
+    // ['EVENT SITE',
+    //     ['HTML', 'CSS', 'Vanilla JS', 'Bootstrap', 'Sass', 'Canvas'],
+    //     img2,
+    //     'https://morswin19.github.io/event-site-react/#/',
+    //     'helps you with making life changing decisions made with:'
+    // ],
     ['DECIDER',
         ['HTML', 'CSS', 'Vanilla JS', 'Bootstrap', 'Sass', 'Canvas'],
         project1,
@@ -27,9 +26,9 @@ const projectData = [
         'https://morswin19.github.io/my_albums_wd/',
         'collection of music albums made with:'
     ],
-    ['COLLECTION',
+    ['Event Site',
         ['HTML', 'CSS', 'Vanilla JS', 'Bootstrap', 'Sass', 'Canvas'],
-        img11,
+        project3,
         'https://morswin19.github.io/my-albums-react-app/#/my-albums-react-app/',
         'helps you with making life changing decisions made with:']
 ]
@@ -98,36 +97,41 @@ class Projects extends React.Component {
                 <p>If you want to find out more about used technology
                     just click on an image</p>
                 <div id="imgContainer">
+
                     <Image
-                        img={img2}
+                        img={project1}
                         className="imageDiv img1"
                         section="project"
                         mainName="Decider"
                         handleClick={this.handleClick}
-                    />
-                    <Image
-                        img={project1}
-                        className="imageDiv img2"
-                        section="project"
-                        mainName="Decider"
-                        handleClick={this.handleClick}
                         description1="decision making online roulette"
-                        description2="based on Vanilla JS, Canvas click for more info"
+                        description2="based on Vanilla JS, HTML Canvas click for more info"
                     />
                     <Image
                         img={project2}
-                        className="imageDiv img3"
+                        className="imageDiv img2"
                         section="project"
                         mainName="My Music"
                         handleClick={this.handleClick}
+                        description1="collection of music albums"
+                        description2="based on React, click for more info"
                     />
                     <Image
+                        img={project3}
+                        className="imageDiv img3"
+                        section="project"
+                        mainName="Event-site"
+                        handleClick={this.handleClick}
+                        description1="event site"
+                        description2="based on React and React-Router, click form more info"
+                    />
+                    {/* <Image
                         img={img11}
                         className="imageDiv img4"
                         section="project"
                         mainName="Decider"
                         handleClick={this.handleClick}
-                    />
+                    /> */}
                 </div>
                 <button>Show me more on GitHub</button>
                 <div id="nextSkills">

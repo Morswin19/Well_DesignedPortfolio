@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/navbar.sass';
 import Sidebar from './Sidebar';
-// import Background from './Background';
 
 class Navbar extends React.Component {
     state = {
@@ -72,8 +71,6 @@ class Navbar extends React.Component {
     }
 
     render() {
-        // let className = false;
-        // this.state.navScroll === true ? className = true : className = false
         return (
             <div id="nav-container" className={this.state.navScroll}>
                 <div id="navbar">
@@ -136,10 +133,6 @@ class Navbar extends React.Component {
                                             className={this.state.sidebarClass}
                                             click={this.handleEscapeClick}
                                         />
-                                        {/* <Background
-                                        class={this.state.backgroundClass}
-                                        click={this.handleEscapeClick}
-                                    /> */}
                                         <div
                                             id="sidebarBackground"
                                             className={this.state.backgroundClass}
@@ -147,8 +140,6 @@ class Navbar extends React.Component {
                                         </div>
                                     </div>
                                 </>
-                            // <Sidebar />
-                            // </div>
                         }
                     </div>
                 </div>
