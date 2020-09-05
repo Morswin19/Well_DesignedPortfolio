@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a791adf90dcf195ef4881a120e2ee55c",
+    "revision": "6bc8636729fcde1b9bf5172f7f5cae28",
     "url": "/Well_DesignedPortfolio/index.html"
   },
   {
-    "revision": "278e70ec9666534551c4",
-    "url": "/Well_DesignedPortfolio/static/css/main.224ffca4.chunk.css"
+    "revision": "d180cfb0dac45b32a6bf",
+    "url": "/Well_DesignedPortfolio/static/css/3.9574af4e.chunk.css"
   },
   {
-    "revision": "fc11104caef65453828f",
-    "url": "/Well_DesignedPortfolio/static/js/2.0fd3d473.chunk.js"
+    "revision": "3ae0fc1c49e442335378",
+    "url": "/Well_DesignedPortfolio/static/css/main.b9d8e7f2.chunk.css"
+  },
+  {
+    "revision": "150afb5eee81d39c8bcd",
+    "url": "/Well_DesignedPortfolio/static/js/2.4970cece.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Well_DesignedPortfolio/static/js/2.0fd3d473.chunk.js.LICENSE.txt"
+    "url": "/Well_DesignedPortfolio/static/js/2.4970cece.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "278e70ec9666534551c4",
-    "url": "/Well_DesignedPortfolio/static/js/main.fdf984a9.chunk.js"
+    "revision": "d180cfb0dac45b32a6bf",
+    "url": "/Well_DesignedPortfolio/static/js/3.66336b35.chunk.js"
   },
   {
-    "revision": "8eed41ef14ea788bb714",
-    "url": "/Well_DesignedPortfolio/static/js/runtime-main.c210389c.js"
+    "revision": "3ae0fc1c49e442335378",
+    "url": "/Well_DesignedPortfolio/static/js/main.9ad12041.chunk.js"
   },
   {
-    "revision": "739c533278103a4af6286959898c9f65",
-    "url": "/Well_DesignedPortfolio/static/media/11.739c5332.jpg"
+    "revision": "4b1fdbef5ab4eb05c97e",
+    "url": "/Well_DesignedPortfolio/static/js/runtime-main.680fdd5e.js"
   },
   {
     "revision": "0e0cf2a14f91de79cc3dcf8b48d6cfb4",
@@ -36,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Well_DesignedPortfolio/static/media/13.6976fe44.PNG"
   },
   {
-    "revision": "7f17a544c8541fe4bff94aad15696149",
-    "url": "/Well_DesignedPortfolio/static/media/5.7f17a544.jpg"
+    "revision": "7f65c3ac59568d5973c1679c29fd8922",
+    "url": "/Well_DesignedPortfolio/static/media/14.7f65c3ac.PNG"
   },
   {
     "revision": "78b7e783b55c872e865d558b932ad951",
