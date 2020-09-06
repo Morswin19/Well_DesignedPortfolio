@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Well_DesignedPortfolio/static/css/main.b9d8e7f2.chunk.css",
-    "main.js": "/Well_DesignedPortfolio/static/js/main.9ad12041.chunk.js",
-    "main.js.map": "/Well_DesignedPortfolio/static/js/main.9ad12041.chunk.js.map",
+    "main.js": "/Well_DesignedPortfolio/static/js/main.1ed267d8.chunk.js",
+    "main.js.map": "/Well_DesignedPortfolio/static/js/main.1ed267d8.chunk.js.map",
     "runtime-main.js": "/Well_DesignedPortfolio/static/js/runtime-main.680fdd5e.js",
     "runtime-main.js.map": "/Well_DesignedPortfolio/static/js/runtime-main.680fdd5e.js.map",
     "static/js/2.4970cece.chunk.js": "/Well_DesignedPortfolio/static/js/2.4970cece.chunk.js",
@@ -11,12 +11,12 @@
     "static/js/3.66336b35.chunk.js": "/Well_DesignedPortfolio/static/js/3.66336b35.chunk.js",
     "static/js/3.66336b35.chunk.js.map": "/Well_DesignedPortfolio/static/js/3.66336b35.chunk.js.map",
     "index.html": "/Well_DesignedPortfolio/index.html",
-    "precache-manifest.59bb2c037fff4c97323c279dfcf17ae3.js": "/Well_DesignedPortfolio/precache-manifest.59bb2c037fff4c97323c279dfcf17ae3.js",
+    "precache-manifest.7b9f6d762a9d40d0d68ed6de3ac08d3d.js": "/Well_DesignedPortfolio/precache-manifest.7b9f6d762a9d40d0d68ed6de3ac08d3d.js",
     "service-worker.js": "/Well_DesignedPortfolio/service-worker.js",
     "static/css/3.9574af4e.chunk.css.map": "/Well_DesignedPortfolio/static/css/3.9574af4e.chunk.css.map",
     "static/css/main.b9d8e7f2.chunk.css.map": "/Well_DesignedPortfolio/static/css/main.b9d8e7f2.chunk.css.map",
     "static/js/2.4970cece.chunk.js.LICENSE.txt": "/Well_DesignedPortfolio/static/js/2.4970cece.chunk.js.LICENSE.txt",
-    "static/media/12.png": "/Well_DesignedPortfolio/static/media/12.0e0cf2a1.png",
+    "static/media/12.png": "/Well_DesignedPortfolio/static/media/12.2e162791.png",
     "static/media/13.PNG": "/Well_DesignedPortfolio/static/media/13.6976fe44.PNG",
     "static/media/14.PNG": "/Well_DesignedPortfolio/static/media/14.7f65c3ac.PNG",
     "static/media/angular.svg": "/Well_DesignedPortfolio/static/media/angular.78b7e783.svg",
@@ -36,6 +36,6 @@
     "static/js/runtime-main.680fdd5e.js",
     "static/js/2.4970cece.chunk.js",
     "static/css/main.b9d8e7f2.chunk.css",
-    "static/js/main.9ad12041.chunk.js"
+    "static/js/main.1ed267d8.chunk.js"
   ]
 }
