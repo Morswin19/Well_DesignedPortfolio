@@ -26,11 +26,11 @@ const projectData = [
         'https://morswin19.github.io/my_albums_wd/',
         'collection of music albums made with:'
     ],
-    ['Event Site',
-        ['HTML', 'CSS', 'Vanilla JS', 'Bootstrap', 'Sass', 'Canvas'],
+    ['PK FESTIVAL',
+        ['HTML', 'CSS', 'React', 'React Router', 'Sass', 'Fetch Api'],
         project3,
-        'https://morswin19.github.io/my-albums-react-app/#/my-albums-react-app/',
-        'helps you with making life changing decisions made with:']
+        'https://morswin19.github.io/event-site-react/',
+        'PK Festival single page application made with:']
 ]
 
 class Projects extends React.Component {
@@ -120,10 +120,10 @@ class Projects extends React.Component {
                         img={project3}
                         className="imageDiv img3"
                         section="project"
-                        mainName="Event-site"
+                        mainName="PK Festival"
                         handleClick={this.handleClick}
-                        description1="event site"
-                        description2="based on React and React-Router, click form more info"
+                        description1="site of imaginery festival"
+                        description2="based on React, React Router click for more info"
                     />
                     {/* <Image
                         img={img11}
