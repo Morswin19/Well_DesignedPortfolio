@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "33fc5a932c3bfcaa2bab849101b4cd5f",
+    "revision": "162f7a33913ec64d6d37ad6cb9837174",
     "url": "/Well_DesignedPortfolio/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Well_DesignedPortfolio/static/css/3.9574af4e.chunk.css"
   },
   {
-    "revision": "26cbf692524246d003e9",
-    "url": "/Well_DesignedPortfolio/static/css/main.b9d8e7f2.chunk.css"
+    "revision": "40be1d609700afae8203",
+    "url": "/Well_DesignedPortfolio/static/css/main.a271c3bc.chunk.css"
   },
   {
     "revision": "150afb5eee81d39c8bcd",
@@ -24,7 +24,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Well_DesignedPortfolio/static/js/3.66336b35.chunk.js"
   },
   {
-    "revision": "26cbf692524246d003e9",
+    "revision": "40be1d609700afae8203",
     "url": "/Well_DesignedPortfolio/static/js/main.1ed267d8.chunk.js"
   },
   {
