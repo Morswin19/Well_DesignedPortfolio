@@ -18,7 +18,6 @@ class AboutMe extends React.Component {
         window.addEventListener('scroll', this.handleScroll)
     }
     render() {
-        console.log(window.scrollY)
         return (
             <div id="aboutMe">
                 <div id="amInfo">

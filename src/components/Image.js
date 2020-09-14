@@ -7,7 +7,7 @@ class Image extends React.Component {
     render() {
         const { img, className, mainName, description1, description2 } = this.props
         return (
-            <div className={className} >
+            <div id={mainName} className={className} >
                 <img src={img} alt="" />
                 <div className="imageContainer">
                     <div id="plusIcon" onClick={this.props.handleClick}>+</div>

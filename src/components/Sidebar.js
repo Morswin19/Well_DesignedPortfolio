@@ -4,7 +4,7 @@ import FontAwesome from 'react-fontawesome';
 
 class Sidebar extends React.Component {
     state = {
-        projectActive: false
+        projectActive: false,
     }
 
     handleProjectsClick = () => {
@@ -55,17 +55,14 @@ class Sidebar extends React.Component {
                                         style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                                     />
                                     <ul id="projectSidebarList">
-                                        <li>Project1
-                                                <div className="sideLine2"></div>
+                                        <li onClick={this.props.click}><a href="#Decider">Decider</a>
+                                            <div className="sideLine2"></div>
                                         </li>
-                                        <li>Project2
-                                                <div className="sideLine2"></div>
+                                        <li onClick={this.props.click}><a href="#My Music">My Albums</a>
+                                            <div className="sideLine2"></div>
                                         </li>
-                                        <li>Project3
-                                                <div className="sideLine2"></div>
-                                        </li>
-                                        <li>Project4
-                                                <div className="sideLine2"></div>
+                                        <li onClick={this.props.click}><a href="#PK Festival">PK Festival</a>
+                                            <div className="sideLine2"></div>
                                         </li>
                                     </ul>
                                 </>
@@ -119,7 +116,7 @@ class Sidebar extends React.Component {
 
                     </li>
                 </ul>
-            </div>
+            </div >
         );
     }
 }

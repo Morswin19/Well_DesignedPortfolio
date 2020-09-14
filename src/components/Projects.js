@@ -8,12 +8,6 @@ import Image from './Image';
 import ProjectActive from './ProjectActive';
 
 const projectData = [
-    // ['EVENT SITE',
-    //     ['HTML', 'CSS', 'Vanilla JS', 'Bootstrap', 'Sass', 'Canvas'],
-    //     img2,
-    //     'https://morswin19.github.io/event-site-react/#/',
-    //     'helps you with making life changing decisions made with:'
-    // ],
     ['DECIDER',
         ['HTML', 'CSS', 'Vanilla JS', 'Bootstrap', 'Sass', 'Canvas'],
         project1,
@@ -133,7 +127,7 @@ class Projects extends React.Component {
                         handleClick={this.handleClick}
                     /> */}
                 </div>
-                <button>Show me more on GitHub</button>
+                <a href="https://github.com/Morswin19" rel="noopener noreferrer" target="_blank"><button>Show me more on GitHub</button></a>
                 <div id="nextSkills">
                     <h1>Incoming skills:</h1>
                     <ul id="nextSkillsList">
