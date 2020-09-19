@@ -11,7 +11,7 @@ const Header = () => {
                 <div id="helloText">Hello, I'm Peter,
                 <br />I want to write code <br />
                 for you
-                <a href="#skills"
+                <a href="#skillsTitles"
                     ><button>Show me your skills</button></a>
                     <img id="headerImg" src={headerImg} alt="" />
                 </div>
