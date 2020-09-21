@@ -34,8 +34,8 @@ class Projects extends React.Component {
         projectClassname: false
     }
 
+    //function to show one of projects
     handleClick = (e) => {
-
         let imageClass = (e.target.parentElement.parentElement.className)
         if (imageClass === 'imageDiv img1') {
             this.setState({
@@ -59,6 +59,7 @@ class Projects extends React.Component {
         })
     }
 
+    //return from project view to portfolio with escape key press
     handleEscapeKey = (e) => {
         if (e.keyCode === 27 && this.state.projectClassname !== false) {
             this.setState({
@@ -68,17 +69,19 @@ class Projects extends React.Component {
 
     }
 
+    //return from project view to portfolio with "X" click
     handleEscapeClick = () => {
-        // console.log(e.target)
         this.setState({
             projectClassname: !this.state.projectClassname
         })
     }
 
+    //return from project view to portfolio with backround click
     handleBackgroundClick = (e) => {
         e.target.id === 'projectContainer' && this.handleEscapeClick()
     }
 
+    //press key event listener
     componentDidMount() {
         document.addEventListener('keydown', this.handleEscapeKey)
     }

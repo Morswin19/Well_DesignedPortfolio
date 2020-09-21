@@ -7,6 +7,7 @@ class Sidebar extends React.Component {
         projectActive: false,
     }
 
+    //go to one of projects with click on it's name
     handleProjectsClick = () => {
         this.setState({
             projectActive: !this.state.projectActive

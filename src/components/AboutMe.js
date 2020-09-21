@@ -8,12 +8,14 @@ class AboutMe extends React.Component {
         scroll: 1000,
     }
 
+    //function to change colour of lightbulb image
     handleScroll = () => {
         this.setState({
             scroll: window.scrollY
         })
     }
 
+    //listener of scroll
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll)
     }

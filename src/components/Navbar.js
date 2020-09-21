@@ -10,6 +10,7 @@ class Navbar extends React.Component {
         backgroundClass: 'backgroundDisabled'
     }
 
+    //function to make nav background when scroll is > 0
     handleNavbarScroll = () => {
         window.pageYOffset > 0 ? (
             this.setState({
@@ -22,12 +23,14 @@ class Navbar extends React.Component {
             )
     }
 
+    //func to have classic nav or hamburger menu
     handleResize = () => {
         this.setState({
             resize: window.innerWidth
         })
     }
 
+    //escape from sidebar with the escape key
     handleEscapeKey = (e) => {
         (e.keyCode === 27 && this.state.sidebarClass === 'sidebar sidebarActive')
             &&
@@ -37,6 +40,7 @@ class Navbar extends React.Component {
             })
     }
 
+    //escape from sidebar when click on "X" or click outside the sidebar
     handleEscapeClick = () => {
         this.setState({
             sidebarClass: 'sidebar',
@@ -44,6 +48,7 @@ class Navbar extends React.Component {
         })
     }
 
+    //click on hamburger menu function
     handleSidebarClick = () => {
         if (this.state.sidebarClass === 'sidebar') {
             this.setState({
@@ -56,9 +61,9 @@ class Navbar extends React.Component {
                 })
             }, 200)
         }
-        // console.log(this.state.sidebarClass)
     }
 
+    //event listeners
     componentDidMount() {
         window.addEventListener('scroll', this.handleNavbarScroll);
         window.addEventListener('resize', this.handleResize);

@@ -7,10 +7,13 @@ class HomeArrow extends React.Component {
         visible: false
     }
 
-    handleArrowClick = () => {
+    //home arrow click to return to home
+    handleArrowClick = (e) => {
+        e.preventDefault()
         window.scrollTo = (0, 0);
     }
 
+    //function to don't see the home arrow when scroll is on header
     handleHomeArrowVisible = () => {
         if (window.pageYOffset >= 200 && this.state.visible === false) {
             this.setState({
@@ -23,7 +26,7 @@ class HomeArrow extends React.Component {
     }
 
     componentDidMount() {
-        window.addEventListener('scroll', this.handleHomeArrowVisible)
+        window.addEventListener('scroll', this.handleHomeArrowVisible);
     }
 
     render() {
@@ -31,8 +34,8 @@ class HomeArrow extends React.Component {
         return (
             <div>
                 {
-                    (visible === true
-                        && window.innerWidth >= 900
+                    // when onload window width < 900px, i don't want to see home arrow
+                    (visible === true && window.innerWidth >= 900
                     ) &&
                     < a href="/#"
                         className="homeArrow" >

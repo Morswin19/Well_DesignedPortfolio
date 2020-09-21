@@ -5,17 +5,6 @@ import pkPhoto from '../img/pkImg.png'
 
 class Footer extends React.Component {
     state = {
-        innerWidth: 0
-    }
-
-    handleResize = () => {
-        this.setState({
-            innerWidth: window.innerWidth
-        })
-    }
-
-    componentDidMount() {
-        window.addEventListener('resize', this.handleResize);
     }
 
     render() {
@@ -40,7 +29,6 @@ class Footer extends React.Component {
                                     size="lg"
                                     style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                                 />  <a href="mailto:piotr.kalman85@gmail.com">piotr.kalman85@gmail.com</a></p>
-
                             </div>
                             <div id="meSocialsContainer">
                                 <div className="navIcon">
