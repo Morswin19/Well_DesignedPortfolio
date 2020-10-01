@@ -134,9 +134,13 @@ class Projects extends React.Component {
                 <div id="nextSkills">
                     <h1>Incoming skills:</h1>
                     <ul id="nextSkillsList">
-                        <li><span>Vue</span><div>1</div></li>
-                        <li><span>UX</span><div>2</div></li>
+                        <li><span>Type<br />Script</span><div>1</div></li>
+                        <li><span>Vue</span><div>2</div></li>
+                        {/* <li><span>UX</span><div>2</div></li> */}
                         <li><span>unit<br />tests</span><div>3</div></li>
+                        {/* firebase */}
+                        {/* reactnative */}
+                        {/* redux mobx */}
                     </ul>
                 </div>
                 <ProjectActive
