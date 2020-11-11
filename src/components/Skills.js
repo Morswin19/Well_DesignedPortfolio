@@ -3,12 +3,14 @@ import '../styles/skills.sass';
 import Skill from "./Skill";
 import htmlImg from '../img/logos/html.svg';
 import cssImg from '../img/logos/css.svg';
-import sassImg from '../img/logos/sass.svg';
 import jsImg from '../img/logos/javascript.svg';
 import reactImg from '../img/logos/react.svg';
-import rRouterImg from '../img/logos/react-router.svg';
 import angularImg from '../img/logos/angular.svg';
-import bootstrapImg from '../img/logos/bootstrap.svg';
+import vueImg from '../img/logos/vue.svg';
+import sassImg from '../img/logos/sass.svg';
+import typescriptImg from '../img/logos/typescript.svg';
+// import rRouterImg from '../img/logos/react-router.svg';
+// import bootstrapImg from '../img/logos/bootstrap.svg';
 
 const Skills = () => {
     return (
@@ -29,14 +31,6 @@ const Skills = () => {
                     name="CSS"
                 />
                 <Skill
-                    img={sassImg}
-                    name="SASS"
-                />
-                <Skill
-                    img={bootstrapImg}
-                    name="BOOTSTRAP"
-                />
-                <Skill
                     img={jsImg}
                     name="JS"
                 />
@@ -49,9 +43,34 @@ const Skills = () => {
                     name="ANGULAR"
                 />
                 <Skill
-                    img={rRouterImg}
-                    name="REACT ROUTER"
+                    img={vueImg}
+                    name="Vue"
                 />
+                <Skill
+                    img={sassImg}
+                    name="SASS"
+                />
+                <Skill
+                    img={typescriptImg}
+                    name="TYPESCRIPT"
+                />
+                {/* <Skill
+                    img={typescriptImg}
+                    name="TYPESCRIPT"
+                />
+                <Skill
+                    img={typescriptImg}
+                    name="TYPESCRIPT"
+                /> */}
+                {/* <Skill
+                    img={typescriptImg}
+                    name="TYPESCRIPT"
+                />
+                <Skill
+                    img={typescriptImg}
+                    name="TYPESCRIPT"
+                /> */}
+
             </div>
 
         </div >
