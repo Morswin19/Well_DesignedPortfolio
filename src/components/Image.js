@@ -10,7 +10,7 @@ class Image extends React.Component {
       <div id={mainName} className={className}>
         <img src={img} alt='' />
         <div className='imageContainer'>
-          <div class='plusIcon' onClick={this.props.handleClick}>
+          <div className='plusIcon' onClick={this.props.handleClick}>
             +
           </div>
           <div className='imageText'>
