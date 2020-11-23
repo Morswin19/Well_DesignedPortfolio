@@ -9,9 +9,7 @@
 - [General info](#general-info)
 - [Technologies](#technologies)
 - [Sections](#sections)
-- [Screenshots](#screenshots)
 - [Where To Watch](#where-to-watch)
-- [Contact](#contact)
 
 ## Technologies
 
@@ -53,10 +51,6 @@
 - links to facebook, github, linkedin
 - my photo
 - copyrights
-
-## Screenshots
-
-![Example screenshot](./src/img/examplescreenshot.jpg)
 
 ## Where to watch
 
