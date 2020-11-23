@@ -3,14 +3,13 @@ import '../styles/skill.sass';
 
 const Skill = props => {
   const [actualClass, setActualClass] = useState(`skill ${props.shift}`);
-  //1700 scrollY
 
   const removeSkillShiftClass = () => {
     if (window.scrollY >= 1700) {
       setTimeout(() => setActualClass('skill'), props.time);
-      console.log(actualClass);
     }
   };
+
   useEffect(() => {
     window.addEventListener('scroll', () => removeSkillShiftClass());
   }, []);

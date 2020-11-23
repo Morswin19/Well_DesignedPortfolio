@@ -1,9 +1,7 @@
 import React from 'react';
-import '../styles/aboutme.sass';
-
 import ExperienceImg from './ExperienceImg';
-// import experienceImg from '../img/experienceImg.svg';
-// import experienceImg2 from '../img/experienceImg2.svg';
+
+import '../styles/aboutme.sass';
 
 class AboutMe extends React.Component {
   state = {

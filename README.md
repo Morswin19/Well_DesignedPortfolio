@@ -4,6 +4,15 @@
 
 > Hello, with this portfolio I want to introduce myself, my abilities and my skills.
 
+## Table of contents
+
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Sections](#sections)
+- [Screenshots](#screenshots)
+- [Where To Watch](#where-to-watch)
+- [Contact](#contact)
+
 ## Technologies
 
     HTML5
@@ -44,6 +53,10 @@
 - links to facebook, github, linkedin
 - my photo
 - copyrights
+
+## Screenshots
+
+![Example screenshot](./src/img/examplescreenshot.jpg)
 
 ## Where to watch
 

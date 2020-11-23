@@ -1,56 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import FontAwesome from 'react-fontawesome';
 import '../styles/homeArrow.sass';
 
-class HomeArrow extends React.Component {
-    state = {
-        visible: false
-    }
+const HomeArrow = () => {
+  const [visible, setVisible] = useState(false);
 
-    //home arrow click to return to home
-    handleArrowClick = (e) => {
-        e.preventDefault()
-        window.scrollTo = (0, 0);
-    }
+  //home arrow click to return to home
+  const handleArrowClick = e => {
+    e.preventDefault();
+    window.scrollTo = (0, 0);
+  };
 
-    //function to don't see the home arrow when scroll is on header
-    handleHomeArrowVisible = () => {
-        if (window.pageYOffset >= 200 && this.state.visible === false) {
-            this.setState({
-                visible: true
-            })
-        } else if (window.pageYOffset < 200 && this.state.visible === true)
-            this.setState({
-                visible: false
-            })
+  //function to see the home arrow when scroll is out of header
+  const handleHomeArrowVisible = () => {
+    if (window.pageYOffset >= 200 && visible === false) {
+      setVisible(true);
+    } else if (window.pageYOffset < 200 && visible === true) {
+      setVisible(false);
     }
+    console.log(visible);
+  };
 
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleHomeArrowVisible);
-    }
+  useEffect(() => {
+    window.addEventListener('scroll', handleHomeArrowVisible);
+  }, [visible]);
 
-    render() {
-        const { visible } = this.state
-        return (
-            <div>
-                {
-                    // when onload window width < 900px, i don't want to see home arrow
-                    (visible === true && window.innerWidth >= 900
-                    ) &&
-                    < a href="/#"
-                        className="homeArrow" >
-                        <FontAwesome
-                            className="icon"
-                            name="arrow-up"
-                            size="lg"
-                        />
-                    </a>
-                }
-            </div>
-        );
-    }
-}
+  return (
+    <div>
+      {// when onload window width < 900px, i don't want to see home arrow
+      visible === true && window.innerWidth >= 900 && (
+        <a href='/#' className='homeArrow'>
+          <FontAwesome className='icon' name='arrow-up' size='lg' />
+        </a>
+      )}
+    </div>
+  );
+};
 
 export default HomeArrow;
-
-
