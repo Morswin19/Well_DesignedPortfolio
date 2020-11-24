@@ -5,12 +5,6 @@ import '../styles/homeArrow.sass';
 const HomeArrow = () => {
   const [visible, setVisible] = useState(false);
 
-  //home arrow click to return to home
-  const handleArrowClick = e => {
-    e.preventDefault();
-    window.scrollTo = (0, 0);
-  };
-
   //function to see the home arrow when scroll is out of header
   const handleHomeArrowVisible = () => {
     if (window.pageYOffset >= 200 && visible === false) {
@@ -18,7 +12,6 @@ const HomeArrow = () => {
     } else if (window.pageYOffset < 200 && visible === true) {
       setVisible(false);
     }
-    console.log(visible);
   };
 
   useEffect(() => {
