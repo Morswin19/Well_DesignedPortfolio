@@ -21,21 +21,23 @@
             color: $cfour
             margin-left: 30px
             .hello
-                transition: all 1s
+                // transition: all 1s
 
             .runText
-                transform: translateX(-1000px)
-                color: white
+                // transform: translateX(-1000px)
+                // color: white
+                transform: scale(0)
+                animation: run-text 1s 1 forwards
             a
                 text-decoration: none
-            button
-                color: $cthird
-                margin: 0
-                display: block
-                margin-top: 100px
-                &:hover
-                    color: $clight
-                    background: $cthird
+                .headerBtn
+                    color: $cthird
+                    margin: 0
+                    display: block
+                    margin-top: 100px
+                    &:hover
+                        color: $clight
+                        background: $cthird
             #headerImg
                 position: absolute
                 bottom: -200px
@@ -145,3 +147,11 @@
                     transform: scale(0.35)
                 button
                     margin-top: 250px
+
+@keyframes run-text
+    from
+        transform: scale(0)
+        color: $clight
+    to
+        transform: scale(1)
+        color: $cfour

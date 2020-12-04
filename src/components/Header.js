@@ -8,29 +8,28 @@ const Header = () => {
   const [buttonClass, setButtonClass] = useState('');
   const [buttonText, setButtonText] = useState('Show me your skills');
   const [textClass, setTextClass] = useState('runText');
-  // const [buttonText, setButtonText] = useState('Show me your skills');
 
-  // const checkScrollY = () => {
-  //   if (!buttonClass && window.scrollY > 200) {
-  //     setButtonClass('btn');
-  //     setButtonText('@');
-  //   } else if (buttonClass && window.scrollY <= 200) {
-  //     setButtonClass('');
-  //     setButtonText('Show me your skills');
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   document.addEventListener('scroll', checkScrollY);
-  // }, [buttonClass]);
-
-  const runText = () => {
-    setTextClass('');
+  const checkScrollY = () => {
+    if (!buttonClass && window.scrollY > 200) {
+      setButtonClass('btn');
+      setButtonText('@');
+    } else if (buttonClass && window.scrollY <= 200) {
+      setButtonClass('');
+      setButtonText('Show me your skills');
+    }
   };
 
   useEffect(() => {
-    runText();
-  }, []);
+    document.addEventListener('scroll', checkScrollY);
+  }, [buttonClass]);
+
+  // const runText = () => {
+  //   setTextClass('');
+  // };
+
+  // useEffect(() => {
+  //   runText();
+  // }, []);
 
   return (
     <div id='header'>
