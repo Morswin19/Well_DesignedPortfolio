@@ -40,7 +40,7 @@ const Navbar = props => {
   //event listeners
   useEffect(() => {
     window.addEventListener('scroll', handleNavbarScroll);
-    document.addEventListener('keydown', handleEscapeKey);
+    window.addEventListener('keydown', handleEscapeKey);
     if (backgroundClass === 'backgroundActive') {
       setBackgroundClass('backgroundActiveBlack');
     }
