@@ -44,6 +44,7 @@ const Navbar = props => {
     if (backgroundClass === 'backgroundActive') {
       setBackgroundClass('backgroundActiveBlack');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [backgroundClass]);
 
   //nav data
@@ -56,7 +57,7 @@ const Navbar = props => {
   ];
 
   const navList = navData.map((navItem, index) => (
-    <li className='navItem'>
+    <li key={index} className='navItem'>
       <div className='navLink'>
         <a href={navItem.href}>{navItem.name}</a>
         <div className='navLine'></div>

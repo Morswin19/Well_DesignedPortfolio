@@ -16,6 +16,7 @@ const HomeArrow = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleHomeArrowVisible);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visible]);
 
   return (

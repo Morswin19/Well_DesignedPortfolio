@@ -5,14 +5,16 @@ const Skill = props => {
   const [actualClass, setActualClass] = useState(`skill ${props.shift}`);
 
   const removeSkillShiftClass = () => {
-    if (window.scrollY >= 1700) {
+    if (window.scrollY >= 1600) {
       setTimeout(() => setActualClass('skill'), props.time);
     }
   };
 
   useEffect(() => {
     window.addEventListener('scroll', () => removeSkillShiftClass());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
   return (
     <div className={actualClass}>
       <div className='skillImg'>
