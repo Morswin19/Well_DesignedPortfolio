@@ -21,6 +21,11 @@
         .icon
             color: $cfour
             cursor: pointer
+            width: 27px
+            line-height: 28px
+            height: 27px
+            &:hover
+                animation: x-rotate 0.5s infinite linear alternate
     ul
         color: $cfour
         display: flex
@@ -74,6 +79,7 @@
                     margin-right: 35px
                     .icon
                         transition: 0.2s
+                        animation: none
                         &:hover
                             color: $cthird
             .sideLine
@@ -86,8 +92,13 @@
                 .sideLine
                     transform: translate(0)
 
-
 .sidebarActive
     width: 330px
     transition: 0.3s
     transform: translateX(calc(100vw - 330px))
+
+@keyframes x-rotate
+    from
+        transform: rotateX(0deg)
+    to
+        transform: rotateX(180deg)

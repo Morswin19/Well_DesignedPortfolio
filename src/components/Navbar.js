@@ -6,6 +6,7 @@ const Navbar = props => {
   const [navScroll, setNavScroll] = useState('navTop');
   const [sidebarClass, setSidebarClass] = useState('sidebar');
   const [backgroundClass, setBackgroundClass] = useState('backgroundDisabled');
+  const [hamburgerVisible, setHamburgerVisible] = useState('false');
 
   //function to make nav background when scroll is > 0
   const handleNavbarScroll = () => {
@@ -14,7 +15,7 @@ const Navbar = props => {
 
   //escape from sidebar with the escape key
   const handleEscapeKey = e => {
-    if (e.keyCode === '27' && sidebarClass === 'sidebar sidebarActive') {
+    if (e.keyCode === 27 && sidebarClass === 'sidebar sidebarActive') {
       setSidebarClass('sidebar');
       setBackgroundClass('backgroundDisabled');
     }
@@ -39,13 +40,28 @@ const Navbar = props => {
 
   //event listeners
   useEffect(() => {
-    window.addEventListener('scroll', handleNavbarScroll);
+    window.addEventListener('scroll', e => handleNavbarScroll(e));
     window.addEventListener('keydown', handleEscapeKey);
     if (backgroundClass === 'backgroundActive') {
       setBackgroundClass('backgroundActiveBlack');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [backgroundClass]);
+
+  useEffect(() => {
+    if (window.innerWidth < 1100 && !hamburgerVisible) {
+      setHamburgerVisible(true);
+    } else if (window.innerWidth >= 1100 && hamburgerVisible) {
+      setHamburgerVisible(false);
+    }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 1100 && !hamburgerVisible) {
+        setHamburgerVisible(true);
+      } else if (window.innerWidth >= 1100 && hamburgerVisible) {
+        setHamburgerVisible(false);
+      }
+    });
+  }, [hamburgerVisible]);
 
   //nav data
   const navData = [
@@ -71,7 +87,7 @@ const Navbar = props => {
           <span>P.KALMAN</span> {'//'} PORTFOLIO
         </div>
         <div id='navlinks'>
-          {window.innerWidth > 1100 ? (
+          {!hamburgerVisible ? (
             <ul>{navList}</ul>
           ) : (
             <>
