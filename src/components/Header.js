@@ -9,9 +9,9 @@ const Header = () => {
       <Navbar />
       <div id='helloTextContainer'>
         <div id='helloText'>
-          Hello, I'm Piotr,
-          <br />I want to write code <br />
-          for you
+          <div>Hello, I'm Piotr,</div>
+          <div>I want to write code</div>
+          <div>for you</div>
           <a href='#skillsTitles'>
             <button>Show me your skills</button>
           </a>
