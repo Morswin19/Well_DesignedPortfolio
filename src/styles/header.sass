@@ -23,15 +23,15 @@
             div:first-child
                 opacity: 0
                 transform: translateX(-100px)
-                animation: show-text 1s ease-in-out 0s 1 forwards
+                animation: show-text 0.5s ease-in-out 0s 1 forwards
             div:nth-child(2)
                 opacity: 0
                 transform: translateX(-100px)
-                animation: show-text 1s ease-in-out 1s 1 forwards
+                animation: show-text 0.5s ease-in-out 0.2s 1 forwards
             div:nth-child(3)
                 opacity: 0
                 transform: translateX(-100px)
-                animation: show-text 1s ease-in-out 2s 1 forwards
+                animation: show-text 0.5s ease-in-out 2s 1 forwards
             a
                 text-decoration: none
             button
@@ -145,9 +145,9 @@
 @keyframes show-text
     from
         opacity: 0
-        color: $clight
+        // color: $clight
         transform: translateX(-100px)
     to
         opacity: 1
-        color: $cfour
+        // color: $cfour
         transform: translateX(0px)
