@@ -4,6 +4,7 @@ import '../styles/projects.sass';
 import project1 from '../img/12.png';
 import project2 from '../img/13.PNG';
 import project3 from '../img/14.PNG';
+import project4 from '../img/15.PNG';
 import Image from './Image';
 import ProjectActive from './ProjectActive';
 
@@ -28,6 +29,13 @@ const projectData = [
     project3,
     'https://morswin19.github.io/event-site-react/',
     'PK Festival single page application made with:'
+  ],
+  [
+    'ALTANA',
+    ['HTML', 'CSS', 'Vue', 'Vuex', 'Sass'],
+    project4,
+    'http://altanakwiatowa.pl/',
+    'landing page showing the Flower Arbour'
   ]
 ];
 
@@ -126,7 +134,15 @@ class Projects extends React.Component {
             description1='site of imaginery festival'
             description2='based on React, React Router click for more info'
           />
-
+          <Image
+            img={project4}
+            className='imageDiv img4'
+            section='project'
+            mainName='Altana'
+            handleClick={this.handleClick}
+            description1='flower arbour product site'
+            description2='based on Vue and Vuex click for more info'
+          />
         </div>
         <a
           href='https://github.com/Morswin19'
@@ -140,11 +156,11 @@ class Projects extends React.Component {
           <ul id='nextSkillsList'>
             {/* <li><span>UX</span><div>2</div></li> */}
             <li>
-              <span>node.js</span>
+              <span>PHP</span>
               <div>1</div>
             </li>
             <li>
-              <span>redux</span>
+              <span>Type-script</span>
               <div>2</div>
             </li>
             <li>

@@ -8,7 +8,8 @@ import reactImg from '../img/logos/react.svg';
 import angularImg from '../img/logos/angular.svg';
 import vueImg from '../img/logos/vue.svg';
 import sassImg from '../img/logos/sass.svg';
-import typescriptImg from '../img/logos/typescript.svg';
+// import typescriptImg from '../img/logos/typescript.svg';
+import wordpressImg from '../img/logos/wordpress.svg';
 // import rRouterImg from '../img/logos/react-router.svg';
 // import bootstrapImg from '../img/logos/bootstrap.svg';
 
@@ -30,12 +31,7 @@ const Skills = () => {
         <Skill img={angularImg} name='ANGULAR' shift={'right'} time={100} />
         <Skill img={vueImg} name='VUE' shift={'right'} time={300} />
         <Skill img={sassImg} name='SASS' shift={'right'} time={500} />
-        <Skill
-          img={typescriptImg}
-          name='TYPESCRIPT'
-          shift={'right'}
-          time={700}
-        />
+        <Skill img={wordpressImg} name='WORDPRESS' shift={'right'} time={700} />
       </div>
     </div>
   );
