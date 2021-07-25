@@ -36,7 +36,7 @@ const Footer = () => {
               </p>
             </div>
             <div id='meSocialsContainer'>
-              <div className='navIcon'>
+              {/* <div className='navIcon'>
                 <a
                   href='https://www.facebook.com/piotr.kalman'
                   rel='noopener noreferrer'
@@ -49,7 +49,7 @@ const Footer = () => {
                     style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
                   />
                 </a>
-              </div>
+              </div> */}
               <div className='navIcon'>
                 <a
                   href='https://www.linkedin.com/in/piotr-kalman/'
