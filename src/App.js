@@ -7,22 +7,24 @@ import Next from './components/Next';
 import Footer from './components/Footer';
 import HomeArrow from './components/HomeArrow';
 
-
-const Header = lazy(() => import('./components/Header'))
+const Header = lazy(() => import('./components/Header'));
 
 const renderLoader = () => <p>Loading</p>;
 
 function App() {
-  let [homeArrowDisplay, allowArrow] = useState(true)
+  let [homeArrowDisplay, allowArrow] = useState(true);
 
-  allowArrow = () => (window.innerWidth > 900 ? (homeArrowDisplay = true) : (homeArrowDisplay = false))
+  allowArrow = () =>
+    window.innerWidth > 900
+      ? (homeArrowDisplay = true)
+      : (homeArrowDisplay = false);
 
   useEffect(() => {
-    window.addEventListener('resize', allowArrow)
-  }, [])
+    window.addEventListener('resize', allowArrow);
+  }, []);
 
   return (
-    <div className="App">
+    <div className='App'>
       <div id='mainwrapper'>
         <Suspense fallback={renderLoader()}>
           <Header />

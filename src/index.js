@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.sass';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import TagManager from 'react-gtm-module';
+
+const tagManagerArgs = {
+  gtmId: 'GTM-MCFCL57'
+};
+
+TagManager.initialize(tagManagerArgs);
 
 ReactDOM.render(
   <React.StrictMode>
