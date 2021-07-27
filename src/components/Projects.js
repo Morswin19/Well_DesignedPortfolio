@@ -4,7 +4,7 @@ import '../styles/projects.sass';
 import project1 from '../img/12.png';
 import project2 from '../img/13.PNG';
 import project3 from '../img/14.PNG';
-import project4 from '../img/15.PNG';
+import project4 from '../img/altana.png';
 import Image from './Image';
 import ProjectActive from './ProjectActive';
 
@@ -108,7 +108,7 @@ class Projects extends React.Component {
         </p>
         <div id='imgContainer'>
           <Image
-            img={project1}
+            img={project4}
             className='imageDiv img1'
             section='project'
             mainName='Decider'
@@ -154,7 +154,6 @@ class Projects extends React.Component {
         <div id='nextSkills'>
           <h1>Incoming skills:</h1>
           <ul id='nextSkillsList'>
-            {/* <li><span>UX</span><div>2</div></li> */}
             <li>
               <span>PHP</span>
               <div>1</div>
