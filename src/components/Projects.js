@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/projects.sass';
 // import img7 from '../img/7.jpg';
-import project1 from '../img/12.png';
-import project2 from '../img/13.PNG';
-import project3 from '../img/14.PNG';
+import project1 from '../img/decider.png';
+import project2 from '../img/mymusic.png';
+import project3 from '../img/festival.png';
 import project4 from '../img/altana.png';
 import Image from './Image';
 import ProjectActive from './ProjectActive';
@@ -108,7 +108,7 @@ class Projects extends React.Component {
         </p>
         <div id='imgContainer'>
           <Image
-            img={project4}
+            img={project1}
             className='imageDiv img1'
             section='project'
             mainName='Decider'
