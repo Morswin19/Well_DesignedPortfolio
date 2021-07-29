@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/footer.sass';
 import FontAwesome from 'react-fontawesome';
-import pkPhoto from '../img/pkImg.png';
+import pkPhoto from '../img/piotr.png';
 
 const Footer = () => {
   return (
