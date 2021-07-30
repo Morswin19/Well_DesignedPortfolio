@@ -82,6 +82,7 @@ class Sidebar extends React.Component {
                   </li>
                   <li onClick={this.props.click}>
                     <a href='#Altana'>Altana</a>
+                    Altana
                     <div className='sideLine2'></div>
                   </li>
                 </ul>
