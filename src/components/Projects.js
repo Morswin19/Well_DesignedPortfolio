@@ -5,6 +5,10 @@ import project1 from '../img/decider.png';
 import project2 from '../img/mymusic.png';
 import project3 from '../img/festival.png';
 import project4 from '../img/altana.png';
+import activeImage1 from '../img/12.png';
+import activeImage2 from '../img/13.PNG';
+import activeImage3 from '../img/14.PNG';
+import activeImage4 from '../img/15.PNG';
 import Image from './Image';
 import ProjectActive from './ProjectActive';
 
@@ -12,28 +16,28 @@ const projectData = [
   [
     'DECIDER',
     ['HTML', 'CSS', 'Vanilla JS', 'Sass', 'Canvas'],
-    project1,
+    activeImage1,
     'https://morswin19.github.io/decider/',
     'helps you with making life changing decisions made with:'
   ],
   [
     'MY MUSIC',
     ['HTML', 'CSS', 'React', 'React Router', 'Sass'],
-    project2,
+    activeImage2,
     'https://morswin19.github.io/my_albums_wd/',
     'collection of music albums made with:'
   ],
   [
     'PK FESTIVAL',
     ['HTML', 'CSS', 'React', 'React Router', 'Sass', 'Fetch Api'],
-    project3,
+    activeImage3,
     'https://morswin19.github.io/event-site-react/',
     'PK Festival single page application made with:'
   ],
   [
     'ALTANA',
     ['HTML', 'CSS', 'Vue', 'Vuex', 'Sass'],
-    project4,
+    activeImage4,
     'http://altanakwiatowa.pl/',
     'landing page showing the Flower Arbour'
   ]
