@@ -107,8 +107,8 @@ class Projects extends React.Component {
         <h5>Projects</h5>
         <h1>See my skills in use</h1>
         <p>
-          If you want to find out more about used technology just click on an
-          image
+          If you want to find out more about used technology just hover over the
+          picture and click the plus icon
         </p>
         <div id='imgContainer'>
           <Image
