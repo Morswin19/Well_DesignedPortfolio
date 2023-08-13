@@ -159,23 +159,19 @@ class Projects extends React.Component {
           <h1>Incoming skills:</h1>
           <ul id='nextSkillsList'>
             <li>
-              <span>PHP</span>
+              <span>Symfony</span>
               <div>1</div>
             </li>
             <li>
-              <span>Type-script</span>
+              <span>Graph QL</span>
               <div>2</div>
             </li>
             <li>
               <span>
-                unit
-                <br />
-                tests
+                Docker
               </span>
               <div>3</div>
             </li>
-            {/* firebase */}
-            {/* reactnative */}
           </ul>
         </div>
         <ProjectActive
