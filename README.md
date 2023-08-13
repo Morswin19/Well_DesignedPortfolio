@@ -17,7 +17,7 @@
     CSS3
     react 16.13.1
     react-dom 16.13.1
-    node-sass 4.14.1
+    sass: 1.65.1
     react-fontawesome 1.7.1
 
 ## Sections
@@ -55,4 +55,4 @@
 ## Where to watch
 
 To watch my portfolio, please visit:
-[piotrkalman.com](https://piotrkalman.com)
+[piotrkalman.pl](https://piotrkalman.pl)
