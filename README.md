@@ -55,4 +55,4 @@
 ## Where to watch
 
 To watch my portfolio, please visit:
-[piotrkalman.pl](https://piotrkalman.pl)
+[piotrkalman.com](https://piotrkalman.com)
